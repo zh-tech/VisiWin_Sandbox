@@ -372,12 +372,12 @@ git config --local mergetool.vw7merge.trustExitCode false
 
 # Configure Visual Studio Integration - External Diff Driver
 git config --local difftool.DiffDriver.name "External Diff Driver"
-git config --local difftool.DiffDriver.cmd "`"$repoDirForGit/DiffDriver.cmd`""
+git config --local difftool.DiffDriver.cmd "\`"$repoDir\DiffDriver.cmd\`" `$REMOTE `$LOCAL `$BASE"
 git config --local difftool.DiffDriver.keepBackup false
 
 # Configure Visual Studio Integration - External Merge Driver
 git config --local mergetool.MergeDriver.name "External Merge Driver"
-git config --local mergetool.MergeDriver.cmd "`"$repoDirForGit/MergeDriver.cmd`""
+git config --local mergetool.MergeDriver.cmd "\`"$repoDir\MergeDriver.cmd\`" `$REMOTE `$LOCAL `$BASE `$MERGED"
 git config --local mergetool.MergeDriver.trustExitCode false
 git config --local mergetool.MergeDriver.keepBackup false
 
