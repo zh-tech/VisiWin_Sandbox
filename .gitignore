@@ -1,0 +1,77 @@
+﻿# VisiWin 7 Project .gitignore
+
+# VisiWin-specific files
+*.vwa
+*.vwh
+*.vaa
+*.vwl
+*.vwy
+*.rt7
+*.rtvw7
+*.rtn
+*.src
+*.ldb
+*.sdf
+*.UserLog.txt
+*.Device.config
+*.vwsettings
+
+# Build outputs
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# VisiWin temporary files
+*.tmp
+*.bak
+*.log
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files
+*.rsuser
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# NuGet Packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# Claude Code
+.claude/

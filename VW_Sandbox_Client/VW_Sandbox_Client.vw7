@@ -1,0 +1,2353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectFile xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns="clr-namespace:VisiWin.ProjectFileModel;assembly=VisiWin7.ProjectFileModel">
+  <ProjectFile.Systems>
+    <ProjectSystem>
+      <ProjectSystem.ClientConfig>
+        <ClientConfig DefaultServerName="Server1" DeferredActivationEnabled="True" OptimizedItemActivation="True" SwitchMarkupXmlLanguage="False" MasterServerProjectName="Server1">
+          <ClientConfig.MultipleServerSystemConfigs>
+            <MultipleServerSystemConfig DefaultServerName="Server1" SystemName="UserManagerServer" />
+            <MultipleServerSystemConfig SystemName="AlarmServer" />
+            <MultipleServerSystemConfig SystemName="LoggingServer" />
+            <MultipleServerSystemConfig SystemName="VariableServer" />
+            <MultipleServerSystemConfig SystemName="LanguageServer" />
+            <MultipleServerSystemConfig SystemName="TrendServer" />
+            <MultipleServerSystemConfig SystemName="RecipeServer" />
+          </ClientConfig.MultipleServerSystemConfigs>
+          <ClientConfig.ServerProjectConfigs>
+            <ServerProjectConfig Name="Server1" ServerProjectName="VW_Sandbox_Server" ServerMachine="" />
+          </ClientConfig.ServerProjectConfigs>
+        </ClientConfig>
+      </ProjectSystem.ClientConfig>
+      <ProjectSystem.GlobalConfig>
+        <GlobalConfig Comment="" Customer="" DateCreated="2026-01-12 12:14:44" DateLastModified="2026-01-12 12:14:44" DBVersion="7.3.3.0" DesignerProject="VW_Sandbox_Client.sln" DesignerType="C#" Developer="" Lcid="1033" ProductType="VisiWin7" ProjectTemplate="Client C#" ProjectType="Client" ProjectVersion="" UIType="WPF" UserTemplate="Client" VisiWinVersion="7.3" ProjectGUID="903041BD-8BF4-4B7C-8054-9AD94C68D604" PlugInSupportOption="" />
+      </ProjectSystem.GlobalConfig>
+      <ProjectSystem.ServerConfig>
+        <ServerConfig>
+          <ServerConfig.ServerComponents>
+            <ServerComponent Name="LanguageServer" Active="True" />
+            <ServerComponent Name="VariableServer" Active="True" />
+          </ServerConfig.ServerComponents>
+        </ServerConfig>
+      </ProjectSystem.ServerConfig>
+    </ProjectSystem>
+    <LanguageSystem>
+      <LanguageSystem.Languages>
+        <Language Name="English (United States)" Lcid="1033">
+          <Language.LocalizedTexts>
+            <Node Name="Components">
+              <Node Name="AlarmLine">
+                <LocalizedText Name="AcknowledgeTime" Text="Acknowledge Time:" />
+                <LocalizedText Name="ActivationCounter" Text="Activations:" />
+                <LocalizedText Name="ActivationTime" Text="Time:" />
+                <LocalizedText Name="Class" Text="Class:" />
+                <LocalizedText Name="Count" Text="Count:" />
+                <LocalizedText Name="DeactivationTime" Text="Deactivation Time:" />
+                <LocalizedText Name="Group" Text="Group:" />
+                <LocalizedText Name="Param1" Text="P1:" />
+                <LocalizedText Name="Param2" Text="P2:" />
+                <LocalizedText Name="Priority" Text="Priority:" />
+                <LocalizedText Name="State" Text="State:" />
+                <LocalizedText Name="Symbol" Text="Symbol:" />
+                <LocalizedText Name="Text" Text="Text:" />
+                <LocalizedText Name="Machine" Text="Machine:" />
+                <LocalizedText Name="User" Text="User name:" />
+              </Node>
+              <Node Name="AlarmList">
+                <LocalizedText Name="AcknowledgeTime" Text="Acknowledge Time" />
+                <LocalizedText Name="ActivationCounter" Text="Activations" />
+                <LocalizedText Name="ActivationTime" Text="Time" />
+                <LocalizedText Name="Class" Text="Class" />
+                <LocalizedText Name="Count" Text="Count" />
+                <LocalizedText Name="DeactivationTime" Text="Deactivation Time" />
+                <LocalizedText Name="Group" Text="Group" />
+                <LocalizedText Name="Param1" Text="Parameter 1" />
+                <LocalizedText Name="Param2" Text="Parameter 2" />
+                <LocalizedText Name="Priority" Text="Priority" />
+                <LocalizedText Name="State" Text="State" />
+                <LocalizedText Name="Symbol" Text="Symbol" />
+                <LocalizedText Name="Text" Text="Text" />
+                <LocalizedText Name="Machine" Text="Machine" />
+                <LocalizedText Name="User" Text="User name" />
+                <LocalizedText Name="NotesCount" Text="Notes" />
+                <LocalizedText Name="FileName" Text="File name" />
+              </Node>
+              <Node Name="NoteList">
+                <LocalizedText Name="Note" Text="Note" />
+                <LocalizedText Name="TimeStamp" Text="Time stamp" />
+                <LocalizedText Name="User" Text="User" />
+              </Node>
+              <Node Name="PopupInfo">
+                <LocalizedText Name="Caption" Text="Info for @1s@" />
+                <LocalizedText Name="LimitMax" Text="Upper limit" />
+                <LocalizedText Name="LimitMin" Text="Lower limit" />
+                <LocalizedText Name="Default" Text="Default" />
+                <LocalizedText Name="Alias" Text="Alias" />
+                <LocalizedText Name="ID" Text="ID" />
+              </Node>
+              <Node Name="RecipeList">
+                <LocalizedText Name="FileName" Text="File name" />
+                <LocalizedText Name="FileDescription" Text="Description" />
+                <LocalizedText Name="FileChangedBy" Text="Changed by" />
+                <LocalizedText Name="FileChangedAt" Text="Date of change" />
+                <LocalizedText Name="FileChangesCount" Text="Count of changes" />
+                <LocalizedText Name="FileNotesCount" Text="Count of notes" />
+                <LocalizedText Name="ItemAlias" Text="Item alias" />
+                <LocalizedText Name="ItemText" Text="Item text" />
+                <LocalizedText Name="ItemValue" Text="Item value" />
+                <LocalizedText Name="ItemUnit" Text="Unit" />
+                <LocalizedText Name="ItemMinValue" Text="Minimum" />
+                <LocalizedText Name="ItemMaxValue" Text="Maximum" />
+                <LocalizedText Name="ItemDefaultValue" Text="Default value" />
+              </Node>
+              <Node Name="Time">
+                <Node Name="DateFormats">
+                  <LocalizedText Name="LongDate" Text="MM/dd/yyyy" />
+                  <LocalizedText Name="ShortDate" Text="MM/dd/yy" />
+                  <LocalizedText Name="NamedLongDate" Text="dddd, MMMM d, yyyy" />
+                  <LocalizedText Name="NamedShortDate" Text="ddd, MMM d, yy" />
+                  <LocalizedText Name="UserDefinedDate" Text="ddd, MMM d, yy" />
+                </Node>
+                <Node Name="MonthName">
+                  <LocalizedText Name="1" Text="January" />
+                  <LocalizedText Name="2" Text="February" />
+                  <LocalizedText Name="3" Text="March" />
+                  <LocalizedText Name="4" Text="April" />
+                  <LocalizedText Name="5" Text="May" />
+                  <LocalizedText Name="6" Text="June" />
+                  <LocalizedText Name="7" Text="July" />
+                  <LocalizedText Name="8" Text="August" />
+                  <LocalizedText Name="9" Text="September" />
+                  <LocalizedText Name="10" Text="October" />
+                  <LocalizedText Name="11" Text="November" />
+                  <LocalizedText Name="12" Text="December" />
+                </Node>
+                <Node Name="ShortMonthName">
+                  <LocalizedText Name="1" Text="Jan" />
+                  <LocalizedText Name="2" Text="Feb" />
+                  <LocalizedText Name="3" Text="Mar" />
+                  <LocalizedText Name="4" Text="Apr" />
+                  <LocalizedText Name="5" Text="May" />
+                  <LocalizedText Name="6" Text="Jun" />
+                  <LocalizedText Name="7" Text="Jul" />
+                  <LocalizedText Name="8" Text="Aug" />
+                  <LocalizedText Name="9" Text="Sep" />
+                  <LocalizedText Name="10" Text="Oct" />
+                  <LocalizedText Name="11" Text="Nov" />
+                  <LocalizedText Name="12" Text="Dec" />
+                </Node>
+                <Node Name="ShortWeekdayName">
+                  <LocalizedText Name="1" Text="Su" />
+                  <LocalizedText Name="2" Text="Mo" />
+                  <LocalizedText Name="3" Text="Tu" />
+                  <LocalizedText Name="4" Text="We" />
+                  <LocalizedText Name="5" Text="Th" />
+                  <LocalizedText Name="6" Text="Fr" />
+                  <LocalizedText Name="7" Text="Sa" />
+                </Node>
+                <Node Name="TimeFormats">
+                  <LocalizedText Name="LongTime" Text="hh:mm:ss tt" />
+                  <LocalizedText Name="ShortTime" Text="hh:mm tt" />
+                  <LocalizedText Name="UserDefinedTime" Text="h:m tt" />
+                </Node>
+                <Node Name="WeekdayName">
+                  <LocalizedText Name="1" Text="Sunday" />
+                  <LocalizedText Name="2" Text="Monday" />
+                  <LocalizedText Name="3" Text="Tuesday" />
+                  <LocalizedText Name="4" Text="Wednesday" />
+                  <LocalizedText Name="5" Text="Thursday" />
+                  <LocalizedText Name="6" Text="Friday" />
+                  <LocalizedText Name="7" Text="Saturday" />
+                </Node>
+                <Node Name="Common">
+                  <LocalizedText Name="Hour" Text="Hour" />
+                  <LocalizedText Name="Minute" Text="Minute" />
+                  <LocalizedText Name="Second" Text="Second" />
+                  <LocalizedText Name="Millisecond" Text="Millisecond" />
+                </Node>
+                <LocalizedText Name="FirstDayOfWeek" Text="1" />
+                <LocalizedText Name="FirstWeekOfYear" Text="1" />
+                <LocalizedText Name="WeekNumberLong" Text="Week number" />
+                <LocalizedText Name="WeekNumberShort" Text="WN" />
+              </Node>
+              <Node Name="TrendLegend">
+                <LocalizedText Name="ArchiveText" Text="Archive" />
+                <LocalizedText Name="Color" Text="Color" />
+                <LocalizedText Name="ItemText" Text="Item" />
+                <LocalizedText Name="MarkedValue" Text="Marked value" />
+                <LocalizedText Name="Maximum" Text="Maximum" />
+                <LocalizedText Name="Minimum" Text="Minimum" />
+                <LocalizedText Name="Style" Text="Line style" />
+                <LocalizedText Name="TrendText" Text="Trend" />
+                <LocalizedText Name="Unit" Text="Unit" />
+                <LocalizedText Name="ItemAlias" Text="Variable name" />
+              </Node>
+              <Node Name="ClientRun">
+                <LocalizedText Name="CLIENT_RUN_ERROR_1" Text="Register remoting channel (@1s@) failed, error: @2s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_2" Text="Cannot start VisiWin.Server, error: @1s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_3" Text="Cannot connect to kernel: @1s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_4" Text="Error while loading kernel communicator: @1s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_5" Text="Development dongle without permission for handle VisiWin!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_6" Text="Connecting viewer violates license policies (too many viewers)!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_7" Text="Connecting client violates license policies (client server project or remote access is not allowed)!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_8" Text="Connecting client violates license policies (too many clients)!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_9" Text="Unknown software protection (dongle) for VisiWin (is this a VisiWinStudio, VisiWin32 dongle?)" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_10" Text="Demo mode! Application will terminate within one hour." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_11" Text="Application runs by four hours in development test mode." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_12" Text="Cannot start server project, please check VisiWin Manager diagnostics" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_13" Text="Test phase terminated, system shuts down." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_14" Text="Error on internal function call &quot;@1s@&quot;: @2s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_15" Text="Could not find server @1s@ in internal management list." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_16" Text="... server @1s@ on machine @2s@ reconnected, success: @3s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_17" Text="@1s@: viewer clients are not allowed to influence the process" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_18" Text="Connection to server @1s@ on machine @2s@ lost!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_19" Text="Server @1s@ on machine @2s@ is restarting!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_20" Text="Connection to server @1s@ on machine @2s@ lost, error: @3s@!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_21" Text="VisiWin TCP/IP communication: cannot connect to server: @1s@!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_22" Text="VisiWin TCP/IP communication error: @1s@\nError message: @2s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_23" Text="Project start has cancelled due to timeout monitoring (@1n@ sec.), probably some running servers would remain." />
+                <LocalizedText Name="CLIENT_RUN_TRACE_1" Text="Starting server @1s@ ..." />
+                <LocalizedText Name="CLIENT_RUN_TRACE_2" Text="Valid license received." />
+                <LocalizedText Name="CLIENT_RUN_TRACE_3" Text="... server @1s@ on machine @2s@ started, success: @3s@" />
+                <LocalizedText Name="CLIENT_RUN_TRACE_4" Text="All servers started successfully, InitReady" />
+                <LocalizedText Name="CLIENT_RUN_TRACE_5" Text="Server @1s@ on machine @2s@ reconnected" />
+              </Node>
+            </Node>
+            <Node Name="Dialogs">
+              <Node Name="Common">
+                <LocalizedText Name="cmdOK" Text="OK" />
+                <LocalizedText Name="cmdCancel" Text="Cancel" />
+                <LocalizedText Name="cmdClose" Text="Close" />
+                <LocalizedText Name="cmdYes" Text="Yes" />
+                <LocalizedText Name="cmdNo" Text="No" />
+                <LocalizedText Name="cmdAdd" Text="Add ..." />
+                <LocalizedText Name="cmdRemove" Text="Remove" />
+                <LocalizedText Name="cmdEdit" Text="Edit ..." />
+                <LocalizedText Name="cmdChange" Text="Change ..." />
+                <LocalizedText Name="cmdAbort" Text="Abort" />
+                <LocalizedText Name="cmdRetry" Text="Retry" />
+                <LocalizedText Name="cmdIgnore" Text="Ignore" />
+                <LocalizedText Name="cmdActivate" Text="Activate" />
+                <LocalizedText Name="cmdDeactivate" Text="Deactivate" />
+                <LocalizedText Name="cmdApply" Text="Apply" />
+                <LocalizedText Name="cmdDiscard" Text="Discard" />
+                <LocalizedText Name="cmdOpen" Text="Open ..." />
+                <LocalizedText Name="cmdSave" Text="Save" />
+                <LocalizedText Name="cmdSaveAs" Text="Save as ..." />
+                <LocalizedText Name="cmdSearch" Text="Search ..." />
+                <LocalizedText Name="cmdBack" Text="Back" />
+                <LocalizedText Name="cmdForward" Text="Forward" />
+                <LocalizedText Name="cmdLoad" Text="Load" />
+                <LocalizedText Name="cmdDelete" Text="Delete" />
+              </Node>
+              <Node Name="Recipe">
+                <LocalizedText Name="capLoadRecipe" Text="Load recipe" />
+                <LocalizedText Name="capSaveRecipe" Text="Save recipe" />
+                <LocalizedText Name="lblFileName" Text="Recipe name" />
+                <LocalizedText Name="lblFileDescription" Text="Description" />
+                <LocalizedText Name="lblExistingFiles" Text="Existing recipes" />
+                <LocalizedText Name="ConfirmOverwrite" Text="The recipe '{0}' already exists.\nDo you want to replace it?" />
+                <LocalizedText Name="ConfirmDelete" Text="Do you really want to delete the recipe '{0}'?" />
+              </Node>
+              <Node Name="UserManagement">
+                <Node Name="AddGroupSuccess">
+                  <LocalizedText Name="GroupAlreadyDefined" Text="The name already exists!\nPlease choose another!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="WrongParam" Text="Wrong parameter!" />
+                  <LocalizedText Name="NoName" Text="Please enter a name!" />
+                  <LocalizedText Name="NoLevel" Text="Please enter an authorization level!" />
+                </Node>
+                <Node Name="AddRightSuccess">
+                  <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="WrongParam" Text="Wrong parameter!" />
+                  <LocalizedText Name="NoName" Text="Please enter a name!" />
+                  <LocalizedText Name="RightAlreadyDefined" Text="The name already exists!\nPlease choose another!" />
+                </Node>
+                <Node Name="AddUserSuccess">
+                  <LocalizedText Name="ForbiddenPassword" Text="The password may not be used!\nPlease select another!" />
+                  <LocalizedText Name="InvalidPassword" Text="The password is invalid!\nPlease select another!" />
+                  <LocalizedText Name="InvalidPasswordLength" Text="The password is too short!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="NoCharactersInPassword" Text="The password must contain characters!" />
+                  <LocalizedText Name="NoNumbersInPassword" Text="The password must contain digits!" />
+                  <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="The password must contain special characters!" />
+                  <LocalizedText Name="UnableToSaveUser" Text="Unable to save user data!" />
+                  <LocalizedText Name="UserExists" Text="The name already exists!\nPlease choose another!" />
+                  <LocalizedText Name="NoName" Text="Please enter a name!" />
+                  <LocalizedText Name="NoUserGroup" Text="Please select a user group!" />
+                  <LocalizedText Name="PasswordsNotEqual" Text="The repeated password is not identical with the password!" />
+                  <LocalizedText Name="FullUserExists" Text="The full name already exists!\nPlease choose another!" />
+                  <LocalizedText Name="MachineCodeExists" Text="The code already exists!\nPlease choose another!" />
+                  <LocalizedText Name="NoFullName" Text="Please enter a full name!" />
+                  <LocalizedText Name="LockedPassword" Text="The password may not be used at this time!\nPlease select another!" />
+                </Node>
+                <Node Name="ChangeGroupSuccess">
+                  <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="UnknownGroup" Text="The user group is unknown!" />
+                  <LocalizedText Name="DeleteNotPermitted" Text="Because of the user group settings it is not allowed to remove the user group!" />
+                </Node>
+                <Node Name="ChangePasswordSuccess">
+                  <LocalizedText Name="CantAccessDomainInfo" Text="Unable to save user data since there is no access to the central user management system!" />
+                  <LocalizedText Name="ForbiddenPassword" Text="The password may not be used!\nPlease select another!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="NewPasswordInvalid" Text="The new password is invalid!\nPlease select another!" />
+                  <LocalizedText Name="NewPasswordInvalidLength" Text="The new password is too short!" />
+                  <LocalizedText Name="NoCharactersInPassword" Text="The new password must contain characters!" />
+                  <LocalizedText Name="NoNumbersInPassword" Text="The new password must contain digits!" />
+                  <LocalizedText Name="OldPasswordInvalid" Text="The password is wrong!\nPlease repeat the input!" />
+                  <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="The new password must contain special characters!" />
+                  <LocalizedText Name="UnableToSavePassword" Text="Unable to save user data!" />
+                  <LocalizedText Name="UnknownUser" Text="The user is unknown!" />
+                  <LocalizedText Name="NewPasswordsNotEqual" Text="The repeated new password is not identical with the new password!" />
+                  <LocalizedText Name="NoCurrentUser" Text="There is no user logged on!" />
+                  <LocalizedText Name="LockedPassword" Text="The password may not be used at this time!\nPlease select another!" />
+                </Node>
+                <Node Name="ChangeRightSuccess">
+                  <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="UnableToSaveRight" Text="Unable to save data!" />
+                  <LocalizedText Name="UnknownRight" Text="The right is unknown!" />
+                  <LocalizedText Name="WrongParam" Text="Wrong parameter!" />
+                </Node>
+                <Node Name="ChangeUserSuccess">
+                  <LocalizedText Name="ForbiddenPassword" Text="The password may not be used!\nPlease select another!" />
+                  <LocalizedText Name="InvalidPassword" Text="The password is invalid!\nPlease select another!" />
+                  <LocalizedText Name="InvalidPasswordLength" Text="The password is too short!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="NoCharactersInPassword" Text="The password must contain characters!" />
+                  <LocalizedText Name="NoNumbersInPassword" Text="The password must contain digits!" />
+                  <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="The password must contain special characters!" />
+                  <LocalizedText Name="UnableToSaveUser" Text="Unable to save user data!" />
+                  <LocalizedText Name="UnknownUser" Text="The user is unknown!" />
+                  <LocalizedText Name="UnknownUserClass" Text="The user group is unknown!" />
+                  <LocalizedText Name="FullUserExists" Text="The full name already exists!\nPlease choose another!" />
+                  <LocalizedText Name="MachineCodeExists" Text="The code already exists!\nPlease choose another!" />
+                  <LocalizedText Name="InvalidUserClass" Text="Because of the user group settings this user group may not be selected for the user!" />
+                  <LocalizedText Name="LockedPassword" Text="The password may not be used at this time!\nPlease select another!" />
+                </Node>
+                <Node Name="LogOnSuccess">
+                  <LocalizedText Name="CantAccessDomainInfo" Text="There is no access to the central user management system!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="InvalidPassword" Text="The username or password is not correct!" />
+                  <LocalizedText Name="PasswordExpired" Text="The validity duration of the password has been expired!" />
+                  <LocalizedText Name="RenewPassword" Text="The password received from the administrator has to be changed!" />
+                  <LocalizedText Name="TooManyFailedLogOns" Text="Due to too many failed log ons the user has been suspended!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="UnknownUser" Text="The username or password is not correct!" />
+                  <LocalizedText Name="UserDeactivated" Text="The user is deactivated\nPlease contact the system administrator!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                  <LocalizedText Name="NoCorrespondingLocalUserClass" Text="The user cannot be logged on because the user group from the central user management system is locally undefined!\nPlease contact the system administrator!" />
+                </Node>
+                <Node Name="UserStates">
+                  <LocalizedText Name="Deactivated" Text="Deactivated" />
+                  <LocalizedText Name="Active" Text="Active" />
+                  <LocalizedText Name="Invalidated" Text="Suspended" />
+                  <LocalizedText Name="PasswordExpired" Text="Activate, change password on next log on" />
+                </Node>
+                <Node Name="RemoveUserSuccess">
+                  <LocalizedText Name="UnknownUser" Text="The indicated user was not found in the user administration." />
+                  <LocalizedText Name="UnknownGroup" Text="A user group with this name does not exist." />
+                  <LocalizedText Name="MethodCallFailed" Text="The function could not be executed. (The server is currently not accessible.)" />
+                  <LocalizedText Name="UnableToSaveUser" Text="The server could not save the information." />
+                  <LocalizedText Name="DeletePermitted" Text="Removing the user is not allowed." />
+                </Node>
+                <LocalizedText Name="capAddRight" Text="Add right" />
+                <LocalizedText Name="capAddUser" Text="Add user" />
+                <LocalizedText Name="capAddUserGroup" Text="Add user group" />
+                <LocalizedText Name="capChangePassword" Text="Change password" />
+                <LocalizedText Name="capChangeRight" Text="Change right" />
+                <LocalizedText Name="capChangeUser" Text="Change user" />
+                <LocalizedText Name="capChangeUserGroup" Text="Change user group" />
+                <LocalizedText Name="capLogOn" Text="Log on user" />
+                <LocalizedText Name="capRightsOverview" Text="Overview rights" />
+                <LocalizedText Name="capUserGroupsOverview" Text="Overview user groups" />
+                <LocalizedText Name="capUsersOverview" Text="Overview users" />
+                <LocalizedText Name="capVerify" Text="Verify user" />
+                <LocalizedText Name="chkDeactivationTimeActive" Text="Active" />
+                <LocalizedText Name="chkRightActive" Text="Active" />
+                <LocalizedText Name="chkUsersRemovable" Text="Users may be removed" />
+                <LocalizedText Name="cmdLogOff" Text="Log off" />
+                <LocalizedText Name="cmdLogOn" Text="Log on" />
+                <LocalizedText Name="hdrActive" Text="Active" />
+                <LocalizedText Name="hdrAutoLogOffTime" Text="Time to log off automatically" />
+                <LocalizedText Name="hdrCode" Text="Code" />
+                <LocalizedText Name="hdrComment" Text="Comment" />
+                <LocalizedText Name="hdrDeactivationTime" Text="Deactivation time" />
+                <LocalizedText Name="hdrFullName" Text="Full name" />
+                <LocalizedText Name="hdrMaxFailedLogOns" Text="Max. failed log ons allowed" />
+                <LocalizedText Name="hdrName" Text="Name" />
+                <LocalizedText Name="hdrRemainingLogOns" Text="Remaining log ons" />
+                <LocalizedText Name="hdrRenewPassword" Text="Password validity duration" />
+                <LocalizedText Name="hdrRenewPasswordInterval" Text="Password renewal interval" />
+                <LocalizedText Name="hdrRights" Text="Rights" />
+                <LocalizedText Name="hdrUserGroup" Text="User group" />
+                <LocalizedText Name="hdrUserGroups" Text="User groups" />
+                <LocalizedText Name="hdrUserName" Text="User name" />
+                <LocalizedText Name="hdrUsersCount" Text="Number of users" />
+                <LocalizedText Name="hdrUsersRemovable" Text="Users removable" />
+                <LocalizedText Name="hdrUserState" Text="State" />
+                <LocalizedText Name="lblAutoLogOffTime" Text="Time until automatic log off" />
+                <LocalizedText Name="lblComment" Text="Comment" />
+                <LocalizedText Name="lblDeactivation" Text="Deactivation" />
+                <LocalizedText Name="lblFullName" Text="Full name" />
+                <LocalizedText Name="lblMachineCode" Text="Code" />
+                <LocalizedText Name="lblMaxFailedLogOns" Text="Maximum allowed failed log ons" />
+                <LocalizedText Name="lblName" Text="Name" />
+                <LocalizedText Name="lblNewPassword" Text="New password" />
+                <LocalizedText Name="lblPassword" Text="Password" />
+                <LocalizedText Name="lblRenewPasswordInterval" Text="Interval to renew password" />
+                <LocalizedText Name="lblRepeatNewPassword" Text="Repeat new password" />
+                <LocalizedText Name="lblRepeatPassword" Text="Repeat password" />
+                <LocalizedText Name="lblState" Text="State" />
+                <LocalizedText Name="lblUserGroup" Text="User group" />
+                <LocalizedText Name="lblUserName" Text="User name" />
+                <LocalizedText Name="msgDeactivateUser" Text="Because of the user group settings it is not allowed to remove the user!\nDo you want to deactivate the user instead?" />
+                <LocalizedText Name="msgRemoveRight" Text="Do you want to remove the right permantly from the system?\nAttention: This causes ..." />
+                <LocalizedText Name="msgRemoveUser" Text="Do you want to remove the user permantly from the system?" />
+                <LocalizedText Name="msgRemoveUserGroup" Text="Do you want to remove the user group permantly from the system?\nAttention: This removes also all users in the group from the system!" />
+                <LocalizedText Name="rbtDeactivationDuration" Text="after 1. log on" />
+                <LocalizedText Name="rbtDeactivationTime" Text="at time" />
+                <LocalizedText Name="rbtNoDeactivation" Text="never" />
+                <LocalizedText Name="untAutoLogOffTime" Text="minutes" />
+                <LocalizedText Name="untDays" Text="Days" />
+                <LocalizedText Name="untHours" Text="Hours" />
+                <LocalizedText Name="untMinutes" Text="Min." />
+                <LocalizedText Name="untRenewPasswordInterval" Text="Days" />
+                <LocalizedText Name="chkChangePassword" Text="Change password" />
+                <LocalizedText Name="chkChangeMachineCode" Text="Change code" />
+                <LocalizedText Name="tpgStandard" Text="Standard" />
+                <LocalizedText Name="tpgExtended" Text="Extended" />
+                <LocalizedText Name="vinAuthorizationLevel" Text="Authorization level" />
+                <LocalizedText Name="hdrAuthorizationLevel" Text="Authori-\nzation\nlevel" />
+                <LocalizedText Name="DeleteUserError" Text="User can't be deleted!" />
+                <LocalizedText Name="AddUserError" Text="User can't be created!" />
+                <LocalizedText Name="ChangeUserError" Text="User can't be changed!" />
+                <LocalizedText Name="EnterUserName" Text="Please enter a username." />
+                <LocalizedText Name="UserExistError" Text="Given username exists, please enter a different one!" />
+                <LocalizedText Name="EnterGroupName" Text="Please enter a groupname." />
+                <LocalizedText Name="EnterOldPassword" Text="Please enter old password." />
+                <LocalizedText Name="EnterRepeatedPassword" Text="Please enter password twice." />
+                <LocalizedText Name="EnterDifferentPassword" Text="The new password must differ from the old." />
+                <LocalizedText Name="EnterDate" Text="Please enter a date." />
+                <LocalizedText Name="CodeExistError" Text="Given code exists!" />
+                <LocalizedText Name="EnterUserState" Text="Please enter a user state." />
+                <LocalizedText Name="DeleteUserProhibited" Text="Deleting of user prohibited by group policies!" />
+                <LocalizedText Name="DeleteUserOK" Text="Successfully deleted user from system." />
+                <LocalizedText Name="AddUserOK" Text="Successfully added user to system." />
+                <LocalizedText Name="ChangeUserOK" Text="Successfully changed user." />
+                <LocalizedText Name="AddGroupOK" Text="Successfully added usergroup to system." />
+                <LocalizedText Name="AddGroupError" Text="Usergroup can't be created!" />
+                <LocalizedText Name="DeleteGroupOK" Text="Successfully deleted usergroup from system." />
+                <LocalizedText Name="DeleteGroupError" Text="Usergroup can't be deleted!" />
+                <LocalizedText Name="ChangeGroupOK" Text="Successfully changed usergroup." />
+                <LocalizedText Name="ChangeGroupError" Text="Usergroup can't be changed!" />
+                <LocalizedText Name="AddRightOK" Text="Successfully added right to system." />
+                <LocalizedText Name="AddRightError" Text="Right can't be created!" />
+                <LocalizedText Name="ChangeRightOK" Text="Successfully changed right." />
+                <LocalizedText Name="ChangeRightError" Text="Right can't be changed!" />
+                <LocalizedText Name="DeleteRightOK" Text="Successfully deleted right from system." />
+                <LocalizedText Name="DeleteRightError" Text="Right can't be deleted!" />
+                <LocalizedText Name="EnterSamePassword" Text="The repeated password must not differ from the real password." />
+                <LocalizedText Name="ChooseGroup" Text="Please choose a usergroup." />
+                <LocalizedText Name="ChooseRight" Text="Please choose a right." />
+                <LocalizedText Name="GroupExistError" Text="Given groupname exists, please enter a different one!" />
+                <LocalizedText Name="ChooseState" Text="Please choose a userstate." />
+                <LocalizedText Name="ChangePasswordError" Text="Password can't be changed!" />
+                <LocalizedText Name="DeleteUserQuery" Text="Do you really want to delete this user?" />
+                <LocalizedText Name="DeleteGroupQuery" Text="Do you really want to delete this usergroup?" />
+                <LocalizedText Name="DeleteRightQuery" Text="Do you really want to delete this userright?" />
+                <LocalizedText Name="EnterPassword" Text="Please enter password." />
+                <LocalizedText Name="LogOffError" Text="User cannot logoff!" />
+                <LocalizedText Name="LogOnError" Text="User cannot logon!" />
+                <LocalizedText Name="ChooseUser" Text="Please enter a user." />
+                <LocalizedText Name="LogOnOK" Text="User logged on successfully." />
+                <LocalizedText Name="LogOffOK" Text="User logged off successfully." />
+                <LocalizedText Name="ChangePasswordOK" Text="Password changed successfully." />
+                <LocalizedText Name="EnterRightName" Text="Please enter a rightname." />
+                <LocalizedText Name="NewPasswordsNotEqual" Text="The repeated new password is not identical with the new password!" />
+                <LocalizedText Name="EnterNewPassword" Text="Please enter new password." />
+                <LocalizedText Name="capRemoveUser" Text="Remove User" />
+              </Node>
+              <Node Name="Printing">
+                <Node Name="Progress">
+                  <LocalizedText Name="Caption" Text="Printing" />
+                  <LocalizedText Name="Ready" Text="Ready" />
+                  <LocalizedText Name="PageNumber" Text="Page @1n@ of @2n@" />
+                  <LocalizedText Name="Loading" Text="Loading document(s)" />
+                  <LocalizedText Name="Cancelling" Text="Cancel printing ..." />
+                  <LocalizedText Name="Printing" Text="Printing '@1s@' ..." />
+                  <LocalizedText Name="PrintScreen" Text="Printing screen" />
+                </Node>
+                <Node Name="Settings">
+                  <LocalizedText Name="Caption" Text="Settings for default printer" />
+                  <LocalizedText Name="Printer" Text="Printer" />
+                  <LocalizedText Name="Type" Text="Type" />
+                  <LocalizedText Name="Port" Text="Port / Network path" />
+                  <LocalizedText Name="Color" Text="Color" />
+                  <LocalizedText Name="PageSettings" Text="Page settings" />
+                  <LocalizedText Name="PaperSize" Text="Paper size" />
+                  <LocalizedText Name="Orientation" Text="Orientation" />
+                  <LocalizedText Name="Portrait" Text="Portrait" />
+                  <LocalizedText Name="Landscape" Text="Landscape" />
+                </Node>
+              </Node>
+            </Node>
+            <Node Name="Application">
+              <Node Name="UserManagement">
+                <Node Name="Results">
+                  <Node Name="AddGroupSuccess">
+                    <LocalizedText Name="GroupAlreadyDefined" Text="The name already exists!\nPlease choose another!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="WrongParam" Text="Wrong parameter!" />
+                    <LocalizedText Name="NoName" Text="Please enter a name!" />
+                    <LocalizedText Name="NoLevel" Text="Please enter an authorization level!" />
+                  </Node>
+                  <Node Name="AddRightSuccess">
+                    <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="WrongParam" Text="Wrong parameter!" />
+                    <LocalizedText Name="NoName" Text="Please enter a name!" />
+                    <LocalizedText Name="RightAlreadyDefined" Text="The name already exists!\nPlease choose another!" />
+                  </Node>
+                  <Node Name="AddUserSuccess">
+                    <LocalizedText Name="ForbiddenPassword" Text="The password may not be used!\nPlease select another!" />
+                    <LocalizedText Name="InvalidPassword" Text="The password is invalid!\nPlease select another!" />
+                    <LocalizedText Name="InvalidPasswordLength" Text="The password is too short!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="NoCharactersInPassword" Text="The password must contain characters!" />
+                    <LocalizedText Name="NoNumbersInPassword" Text="The password must contain digits!" />
+                    <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="The password must contain special characters!" />
+                    <LocalizedText Name="UnableToSaveUser" Text="Unable to save user data!" />
+                    <LocalizedText Name="UserExists" Text="The name already exists!\nPlease choose another!" />
+                    <LocalizedText Name="NoName" Text="Please enter a name!" />
+                    <LocalizedText Name="NoUserGroup" Text="Please select a user group!" />
+                    <LocalizedText Name="PasswordsNotEqual" Text="The repeated password is not identical with the password!" />
+                    <LocalizedText Name="FullUserExists" Text="The full name already exists!\nPlease choose another!" />
+                    <LocalizedText Name="MachineCodeExists" Text="The code already exists!\nPlease choose another!" />
+                    <LocalizedText Name="NoFullName" Text="Please enter a full name!" />
+                    <LocalizedText Name="LockedPassword" Text="The password may not be used at this time!\nPlease select another!" />
+                  </Node>
+                  <Node Name="ChangeGroupSuccess">
+                    <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="UnknownGroup" Text="The user group is unknown!" />
+                    <LocalizedText Name="DeleteNotPermitted" Text="Because of the user group settings it is not allowed to remove the user group!" />
+                  </Node>
+                  <Node Name="ChangePasswordSuccess">
+                    <LocalizedText Name="CantAccessDomainInfo" Text="Unable to save user data since there is no access to the central user management system!" />
+                    <LocalizedText Name="ForbiddenPassword" Text="The password may not be used!\nPlease select another!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="NewPasswordInvalid" Text="The new password is invalid!\nPlease select another!" />
+                    <LocalizedText Name="NewPasswordInvalidLength" Text="The new password is too short!" />
+                    <LocalizedText Name="NoCharactersInPassword" Text="The new password must contain characters!" />
+                    <LocalizedText Name="NoNumbersInPassword" Text="The new password must contain digits!" />
+                    <LocalizedText Name="OldPasswordInvalid" Text="The password is wrong!\nPlease repeat the input!" />
+                    <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="The new password must contain special characters!" />
+                    <LocalizedText Name="UnableToSavePassword" Text="Unable to save user data!" />
+                    <LocalizedText Name="UnknownUser" Text="The user is unknown!" />
+                    <LocalizedText Name="NewPasswordsNotEqual" Text="The repeated new password is not identical with the new password!" />
+                    <LocalizedText Name="NoCurrentUser" Text="There is no user logged on!" />
+                    <LocalizedText Name="LockedPassword" Text="The password may not be used at this time!\nPlease select another!" />
+                  </Node>
+                  <Node Name="ChangeRightSuccess">
+                    <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="UnableToSaveRight" Text="Unable to save data!" />
+                    <LocalizedText Name="UnknownRight" Text="The right is unknown!" />
+                    <LocalizedText Name="WrongParam" Text="Wrong parameter!" />
+                  </Node>
+                  <Node Name="ChangeUserSuccess">
+                    <LocalizedText Name="ForbiddenPassword" Text="The password may not be used!\nPlease select another!" />
+                    <LocalizedText Name="InvalidPassword" Text="The password is invalid!\nPlease select another!" />
+                    <LocalizedText Name="InvalidPasswordLength" Text="The password is too short!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="NoCharactersInPassword" Text="The password must contain characters!" />
+                    <LocalizedText Name="NoNumbersInPassword" Text="The password must contain digits!" />
+                    <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="The password must contain special characters!" />
+                    <LocalizedText Name="UnableToSaveUser" Text="Unable to save user data!" />
+                    <LocalizedText Name="UnknownUser" Text="The user is unknown!" />
+                    <LocalizedText Name="UnknownUserClass" Text="The user group is unknown!" />
+                    <LocalizedText Name="FullUserExists" Text="The full name already exists!\nPlease choose another!" />
+                    <LocalizedText Name="MachineCodeExists" Text="The code already exists!\nPlease choose another!" />
+                    <LocalizedText Name="InvalidUserClass" Text="Because of the user group settings this user group may not be selected for the user!" />
+                    <LocalizedText Name="LockedPassword" Text="The password may not be used at this time!\nPlease select another!" />
+                  </Node>
+                  <Node Name="LogOnSuccess">
+                    <LocalizedText Name="CantAccessDomainInfo" Text="There is no access to the central user management system!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="InvalidPassword" Text="The username or password is not correct!" />
+                    <LocalizedText Name="PasswordExpired" Text="The validity duration of the password has been expired!" />
+                    <LocalizedText Name="RenewPassword" Text="The password received from the administrator has to be changed!" />
+                    <LocalizedText Name="TooManyFailedLogOns" Text="Due to too many failed log ons the user has been suspended!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="UnknownUser" Text="The username or password is not correct!" />
+                    <LocalizedText Name="UserDeactivated" Text="The user is deactivated\nPlease contact the system administrator!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Unfortunately an unknown error has occurred!\nPlease contact the system administrator!" />
+                    <LocalizedText Name="NoCorrespondingLocalUserClass" Text="The user cannot be logged on because the user group from the central user management system is locally undefined!\nPlease contact the system administrator!" />
+                  </Node>
+                  <LocalizedText Name="DeleteUserError" Text="User can't be deleted!" />
+                  <LocalizedText Name="AddUserError" Text="User can't be created!" />
+                  <LocalizedText Name="ChangeUserError" Text="User can't be changed!" />
+                  <LocalizedText Name="EnterUserName" Text="Please enter a username." />
+                  <LocalizedText Name="UserExistError" Text="Given username exists, please enter a different one!" />
+                  <LocalizedText Name="EnterGroupName" Text="Please enter a groupname." />
+                  <LocalizedText Name="EnterOldPassword" Text="Please enter old password." />
+                  <LocalizedText Name="EnterRepeatedPassword" Text="Please enter password twice." />
+                  <LocalizedText Name="EnterDifferentPassword" Text="The new password must differ from the old." />
+                  <LocalizedText Name="EnterDate" Text="Please enter a date." />
+                  <LocalizedText Name="CodeExistError" Text="Given code exists!" />
+                  <LocalizedText Name="EnterUserState" Text="Please enter a user state." />
+                  <LocalizedText Name="DeleteUserProhibited" Text="Deleting of user prohibited by group policies!" />
+                  <LocalizedText Name="DeleteUserOK" Text="Successfully deleted user from system." />
+                  <LocalizedText Name="AddUserOK" Text="Successfully added user to system." />
+                  <LocalizedText Name="ChangeUserOK" Text="Successfully changed user." />
+                  <LocalizedText Name="AddGroupOK" Text="Successfully added usergroup to system." />
+                  <LocalizedText Name="AddGroupError" Text="Usergroup can't be created!" />
+                  <LocalizedText Name="DeleteGroupOK" Text="Successfully deleted usergroup from system." />
+                  <LocalizedText Name="DeleteGroupError" Text="Usergroup can't be deleted!" />
+                  <LocalizedText Name="ChangeGroupOK" Text="Successfully changed usergroup." />
+                  <LocalizedText Name="ChangeGroupError" Text="Usergroup can't be changed!" />
+                  <LocalizedText Name="AddRightOK" Text="Successfully added right to system." />
+                  <LocalizedText Name="AddRightError" Text="Right can't be created!" />
+                  <LocalizedText Name="ChangeRightOK" Text="Successfully changed right." />
+                  <LocalizedText Name="ChangeRightError" Text="Right can't be changed!" />
+                  <LocalizedText Name="DeleteRightOK" Text="Successfully deleted right from system." />
+                  <LocalizedText Name="DeleteRightError" Text="Right can't be deleted!" />
+                  <LocalizedText Name="EnterSamePassword" Text="The repeated password must not differ from the real password." />
+                  <LocalizedText Name="ChooseGroup" Text="Please choose a usergroup." />
+                  <LocalizedText Name="ChooseRight" Text="Please choose a right." />
+                  <LocalizedText Name="GroupExistError" Text="Given groupname exists, please enter a different one!" />
+                  <LocalizedText Name="ChooseState" Text="Please choose a userstate." />
+                  <LocalizedText Name="ChangePasswordError" Text="Password can't be changed!" />
+                  <LocalizedText Name="DeleteUserQuery" Text="Do you really want to delete this user?" />
+                  <LocalizedText Name="DeleteGroupQuery" Text="Do you really want to delete this usergroup?" />
+                  <LocalizedText Name="DeleteRightQuery" Text="Do you really want to delete this userright?" />
+                  <LocalizedText Name="EnterPassword" Text="Please enter password." />
+                  <LocalizedText Name="LogOffError" Text="User cannot logoff!" />
+                  <LocalizedText Name="LogOnError" Text="User cannot logon!" />
+                  <LocalizedText Name="ChooseUser" Text="Please enter a user." />
+                  <LocalizedText Name="LogOnOK" Text="User logged on successfully." />
+                  <LocalizedText Name="LogOffOK" Text="User logged off successfully." />
+                  <LocalizedText Name="ChangePasswordOK" Text="Password changed successfully." />
+                  <LocalizedText Name="EnterRightName" Text="Please enter a rightname." />
+                </Node>
+                <Node Name="UserStates">
+                  <LocalizedText Name="Deactivated" Text="Deactivated" />
+                  <LocalizedText Name="Active" Text="Active" />
+                  <LocalizedText Name="Invalidated" Text="Suspended" />
+                  <LocalizedText Name="PasswordExpired" Text="Active, change password" />
+                </Node>
+                <Node Name="View">
+                  <Node Name="Buttons">
+                    <LocalizedText Name="LogOn" Text="Log on" />
+                    <LocalizedText Name="LogOff" Text="Log off" />
+                    <LocalizedText Name="LogOnOff" Text="Log on/off" />
+                    <LocalizedText Name="ChangeCurrentPassword" Text="Change current password" />
+                    <LocalizedText Name="Add" Text="Add" />
+                    <LocalizedText Name="Change" Text="Change" />
+                    <LocalizedText Name="Remove" Text="Remove" />
+                    <LocalizedText Name="ChangePassword" Text="Change password" />
+                  </Node>
+                  <Node Name="Grid">
+                    <LocalizedText Name="UserName" Text="Name" />
+                    <LocalizedText Name="FullUserName" Text="Full name" />
+                    <LocalizedText Name="State" Text="State" />
+                    <LocalizedText Name="Group" Text="User group" />
+                    <LocalizedText Name="MaxErrorLogOn" Text="Max. failed\nLogOns" />
+                    <LocalizedText Name="PasswordInterval" Text="Password\nchange" />
+                    <LocalizedText Name="UserRemovable" Text="Removable" />
+                    <LocalizedText Name="TimeToAutoLogOff" Text="Time to\nAutoLogOff" />
+                    <LocalizedText Name="Comment" Text="Comment" />
+                    <LocalizedText Name="Right" Text="Right" />
+                    <LocalizedText Name="GroupText" Text="Description" />
+                    <LocalizedText Name="RightText" Text="Name" />
+                    <LocalizedText Name="RightActive" Text="Active" />
+                  </Node>
+                  <LocalizedText Name="AddUser" Text="Add user" />
+                  <LocalizedText Name="DeleteUser" Text="Delete user" />
+                  <LocalizedText Name="ChangeUser" Text="Change user" />
+                  <LocalizedText Name="AddGroup" Text="Add usergroup" />
+                  <LocalizedText Name="DeleteGroup" Text="Delete usergroup" />
+                  <LocalizedText Name="ChangeGroup" Text="Change usergroup" />
+                  <LocalizedText Name="AddRight" Text="Add right" />
+                  <LocalizedText Name="DeleteRight" Text="Delete right" />
+                  <LocalizedText Name="ChangeRight" Text="Change right" />
+                  <LocalizedText Name="UserName" Text="Name" />
+                  <LocalizedText Name="FullUserName" Text="Full Name" />
+                  <LocalizedText Name="Code" Text="Code" />
+                  <LocalizedText Name="UserGroup" Text="Group" />
+                  <LocalizedText Name="Password" Text="Password" />
+                  <LocalizedText Name="SecondPassword" Text="Repeat new password" />
+                  <LocalizedText Name="Status" Text="Work state" />
+                  <LocalizedText Name="Deactivation" Text="Deactivation" />
+                  <LocalizedText Name="DeactNever" Text="Never" />
+                  <LocalizedText Name="DeactOnDate" Text="Date" />
+                  <LocalizedText Name="DeactAfterTime" Text="After" />
+                  <LocalizedText Name="Change" Text="change" />
+                  <LocalizedText Name="Days" Text="Days" />
+                  <LocalizedText Name="Hours" Text="Hours" />
+                  <LocalizedText Name="Minutes" Text="Min" />
+                  <LocalizedText Name="UserGroupName" Text="Name" />
+                  <LocalizedText Name="UserNameWithBinding" Text="Username shown with adapterbinding" />
+                  <LocalizedText Name="TimeToAutoLogOff" Text="Time until autom. log off" />
+                  <LocalizedText Name="RenewPassword" Text="Renew password after" />
+                  <LocalizedText Name="MaximumLogOnAttempts" Text="Max. attempts to log on" />
+                  <LocalizedText Name="Comment" Text="Comment" />
+                  <LocalizedText Name="Rights" Text="Rights" />
+                  <LocalizedText Name="ChangePassword" Text="Change password" />
+                  <LocalizedText Name="LogOnOff" Text="Log on/off user" />
+                  <LocalizedText Name="RightName" Text="Name" />
+                  <LocalizedText Name="UserGroups" Text="Usergroups" />
+                  <LocalizedText Name="Active" Text="Active" />
+                  <LocalizedText Name="OldPassword" Text="Old password" />
+                  <LocalizedText Name="CurrentUser" Text="Current user" />
+                  <LocalizedText Name="Overview" Text="Overview" />
+                  <LocalizedText Name="Users" Text="Users" />
+                  <LocalizedText Name="UserNameWithSystemVariables" Text="Username shown with systemvariables" />
+                  <LocalizedText Name="UsersRemovable" Text="Users removable" />
+                  <LocalizedText Name="NoUser" Text="No user deposited" />
+                  <LocalizedText Name="NewPassword" Text="New password" />
+                </Node>
+                <LocalizedText Name="InitError" Text="Initial fault in usermanagement" />
+              </Node>
+              <Node Name="Views">
+                <Node Name="Footer">
+                  <LocalizedText Name="Home" Text="Home" />
+                  <LocalizedText Name="Machine" Text="Machine" />
+                  <LocalizedText Name="Exit" Text="Exit" />
+                </Node>
+                <Node Name="Header">
+                  <LocalizedText Name="NoUserLoggedOn" Text="No user logged on" />
+                  <LocalizedText Name="quit an alarm" Text="Acknowledge" />
+                </Node>
+              </Node>
+              <Node Name="Events">
+                <Node Name="EventFilter">
+                  <Node Name="EventCategory">
+                    <LocalizedText Name="Success" Text="Success" />
+                    <LocalizedText Name="Informational" Text="Informational" />
+                    <LocalizedText Name="Warning" Text="Warning" />
+                    <LocalizedText Name="Error" Text="Error" />
+                    <LocalizedText Name="Fatal" Text="Fatal" />
+                  </Node>
+                  <Node Name="TimespanFilter">
+                    <LocalizedText Name="Today" Text="Today" />
+                    <LocalizedText Name="Yesterday" Text="Yesterday" />
+                    <LocalizedText Name="ThisWeek" Text="This Week" />
+                    <LocalizedText Name="LastWeek" Text="Last Week" />
+                    <LocalizedText Name="Custom" Text="Custom" />
+                    <LocalizedText Name="None" Text="None" />
+                  </Node>
+                  <LocalizedText Name="Timespan" Text="Timespan" />
+                  <LocalizedText Name="Categories" Text="Categories" />
+                  <LocalizedText Name="From" Text="From" />
+                  <LocalizedText Name="To" Text="To" />
+                  <LocalizedText Name="Settings" Text="Settings" />
+                  <LocalizedText Name="Colors" Text="Colors" />
+                  <LocalizedText Name="SuccessColor" Text="Success color" />
+                  <LocalizedText Name="InformationalColor" Text="Informational color" />
+                  <LocalizedText Name="WarningColor" Text="Warning color" />
+                  <LocalizedText Name="ErrorColor" Text="Error color" />
+                  <LocalizedText Name="FatalColor" Text="Fatal color" />
+                  <LocalizedText Name="Foreground" Text="Foreground color" />
+                  <LocalizedText Name="Background" Text="Background color" />
+                </Node>
+                <Node Name="EventView">
+                  <LocalizedText Name="Events" Text="Events" />
+                  <LocalizedText Name="SearchText" Text="Search text" />
+                  <LocalizedText Name="TimeStamp" Text="Time stamp" />
+                  <LocalizedText Name="Thread" Text="Thread" />
+                  <LocalizedText Name="Category" Text="Category" />
+                  <LocalizedText Name="Source" Text="Source" />
+                  <LocalizedText Name="LogText" Text="Log text" />
+                  <LocalizedText Name="LogFilePath" Text="Log file path:" />
+                  <LocalizedText Name="SearchTextWatermark" Text="Enter your search text" />
+                  <LocalizedText Name="CurrentEventCount" Text="Current event count:" />
+                  <LocalizedText Name="Of" Text="of" />
+                </Node>
+              </Node>
+              <LocalizedText Name="LanguageComboBoxItem1031" Text="GER" />
+              <LocalizedText Name="LanguageComboBoxItem1033" Text="EN" />
+            </Node>
+          </Language.LocalizedTexts>
+        </Language>
+        <Language Name="German (Germany)" Lcid="1031">
+          <Language.LocalizedTexts>
+            <Node Name="Components">
+              <Node Name="AlarmLine">
+                <LocalizedText Name="AcknowledgeTime" Text="Quittierungszeit:" />
+                <LocalizedText Name="ActivationCounter" Text="Aktivierungen:" />
+                <LocalizedText Name="ActivationTime" Text="Zeit:" />
+                <LocalizedText Name="Class" Text="Klasse:" />
+                <LocalizedText Name="Count" Text="Anzahl:" />
+                <LocalizedText Name="DeactivationTime" Text="Deaktivierungszeit:" />
+                <LocalizedText Name="Group" Text="Gruppe:" />
+                <LocalizedText Name="Param1" Text="P1:" />
+                <LocalizedText Name="Param2" Text="P2:" />
+                <LocalizedText Name="Priority" Text="Priorität:" />
+                <LocalizedText Name="State" Text="Status:" />
+                <LocalizedText Name="Symbol" Text="Symbol:" />
+                <LocalizedText Name="Text" Text="Text:" />
+                <LocalizedText Name="Machine" Text="Maschine:" />
+                <LocalizedText Name="User" Text="Benutzername:" />
+              </Node>
+              <Node Name="AlarmList">
+                <LocalizedText Name="AcknowledgeTime" Text="Quittierungszeit" />
+                <LocalizedText Name="ActivationCounter" Text="Aktivierungen" />
+                <LocalizedText Name="ActivationTime" Text="Zeit" />
+                <LocalizedText Name="Class" Text="Klasse" />
+                <LocalizedText Name="Count" Text="Anzahl" />
+                <LocalizedText Name="DeactivationTime" Text="Deaktivierungszeit" />
+                <LocalizedText Name="Group" Text="Gruppe" />
+                <LocalizedText Name="Param1" Text="Parameter 1" />
+                <LocalizedText Name="Param2" Text="Parameter 2" />
+                <LocalizedText Name="Priority" Text="Priorität" />
+                <LocalizedText Name="State" Text="Status" />
+                <LocalizedText Name="Symbol" Text="Symbol" />
+                <LocalizedText Name="Text" Text="Text" />
+                <LocalizedText Name="Machine" Text="Maschine" />
+                <LocalizedText Name="User" Text="Benutzername" />
+                <LocalizedText Name="NotesCount" Text="Notizen" />
+                <LocalizedText Name="FileName" Text="Dateiname" />
+              </Node>
+              <Node Name="NoteList">
+                <LocalizedText Name="Note" Text="Notiz" />
+                <LocalizedText Name="TimeStamp" Text="Zeitpunkt" />
+                <LocalizedText Name="User" Text="Benutzer" />
+              </Node>
+              <Node Name="PopupInfo">
+                <LocalizedText Name="Caption" Text="Info zu @1s@" />
+                <LocalizedText Name="LimitMax" Text="Obergrenze" />
+                <LocalizedText Name="LimitMin" Text="Untergrenze" />
+                <LocalizedText Name="Default" Text="Vorgabe" />
+                <LocalizedText Name="Alias" Text="Alias" />
+                <LocalizedText Name="ID" Text="ID" />
+              </Node>
+              <Node Name="RecipeList">
+                <LocalizedText Name="FileName" Text="Dateiname" />
+                <LocalizedText Name="FileDescription" Text="Beschreibung" />
+                <LocalizedText Name="FileChangedBy" Text="geändert von" />
+                <LocalizedText Name="FileChangedAt" Text="Änderungsdatum" />
+                <LocalizedText Name="FileChangesCount" Text="Anzahl Änderungen" />
+                <LocalizedText Name="FileNotesCount" Text="Anzahl Notizen" />
+                <LocalizedText Name="ItemAlias" Text="Variablenalias" />
+                <LocalizedText Name="ItemText" Text="Variablentext" />
+                <LocalizedText Name="ItemValue" Text="Variablenwert" />
+                <LocalizedText Name="ItemUnit" Text="Einheit" />
+                <LocalizedText Name="ItemMinValue" Text="Minimum" />
+                <LocalizedText Name="ItemMaxValue" Text="Maximum" />
+                <LocalizedText Name="ItemDefaultValue" Text="Ersatzwert" />
+              </Node>
+              <Node Name="Time">
+                <Node Name="DateFormats">
+                  <LocalizedText Name="LongDate" Text="dd.MM.yyyy" />
+                  <LocalizedText Name="ShortDate" Text="dd.MM.yy" />
+                  <LocalizedText Name="NamedLongDate" Text="dddd, d. MMMM yyyy" />
+                  <LocalizedText Name="NamedShortDate" Text="ddd, d. MMM yy" />
+                  <LocalizedText Name="UserDefinedDate" Text="ddd. d. MMM yyyy" />
+                </Node>
+                <Node Name="MonthName">
+                  <LocalizedText Name="1" Text="Januar" />
+                  <LocalizedText Name="2" Text="Februar" />
+                  <LocalizedText Name="3" Text="März" />
+                  <LocalizedText Name="4" Text="April" />
+                  <LocalizedText Name="5" Text="Mai" />
+                  <LocalizedText Name="6" Text="Juni" />
+                  <LocalizedText Name="7" Text="Juli" />
+                  <LocalizedText Name="8" Text="August" />
+                  <LocalizedText Name="9" Text="September" />
+                  <LocalizedText Name="10" Text="Oktober" />
+                  <LocalizedText Name="11" Text="November" />
+                  <LocalizedText Name="12" Text="Dezember" />
+                </Node>
+                <Node Name="ShortMonthName">
+                  <LocalizedText Name="1" Text="Jan" />
+                  <LocalizedText Name="2" Text="Feb" />
+                  <LocalizedText Name="3" Text="Mär" />
+                  <LocalizedText Name="4" Text="Apr" />
+                  <LocalizedText Name="5" Text="Mai" />
+                  <LocalizedText Name="6" Text="Jun" />
+                  <LocalizedText Name="7" Text="Jul" />
+                  <LocalizedText Name="8" Text="Aug" />
+                  <LocalizedText Name="9" Text="Sep" />
+                  <LocalizedText Name="10" Text="Okt" />
+                  <LocalizedText Name="11" Text="Nov" />
+                  <LocalizedText Name="12" Text="Dez" />
+                </Node>
+                <Node Name="ShortWeekdayName">
+                  <LocalizedText Name="1" Text="So" />
+                  <LocalizedText Name="2" Text="Mo" />
+                  <LocalizedText Name="3" Text="Di" />
+                  <LocalizedText Name="4" Text="Mi" />
+                  <LocalizedText Name="5" Text="Do" />
+                  <LocalizedText Name="6" Text="Fr" />
+                  <LocalizedText Name="7" Text="Sa" />
+                </Node>
+                <Node Name="TimeFormats">
+                  <LocalizedText Name="LongTime" Text="HH:mm:ss" />
+                  <LocalizedText Name="ShortTime" Text="HH:mm" />
+                  <LocalizedText Name="UserDefinedTime" Text="HH:mm" />
+                </Node>
+                <Node Name="WeekdayName">
+                  <LocalizedText Name="1" Text="Sonntag" />
+                  <LocalizedText Name="2" Text="Montag" />
+                  <LocalizedText Name="3" Text="Dienstag" />
+                  <LocalizedText Name="4" Text="Mittwoch" />
+                  <LocalizedText Name="5" Text="Donnerstag" />
+                  <LocalizedText Name="6" Text="Freitag" />
+                  <LocalizedText Name="7" Text="Samstag" />
+                </Node>
+                <Node Name="Common">
+                  <LocalizedText Name="Hour" Text="Stunde" />
+                  <LocalizedText Name="Minute" Text="Minute" />
+                  <LocalizedText Name="Second" Text="Sekunde" />
+                  <LocalizedText Name="Millisecond" Text="Millisekunde" />
+                </Node>
+                <LocalizedText Name="FirstDayOfWeek" Text="2" />
+                <LocalizedText Name="FirstWeekOfYear" Text="2" />
+                <LocalizedText Name="WeekNumberLong" Text="Kalenderwoche" />
+                <LocalizedText Name="WeekNumberShort" Text="KW" />
+              </Node>
+              <Node Name="TrendLegend">
+                <LocalizedText Name="ArchiveText" Text="Archiv" />
+                <LocalizedText Name="Color" Text="Farbe" />
+                <LocalizedText Name="ItemText" Text="Variable" />
+                <LocalizedText Name="MarkedValue" Text="Markierter Wert" />
+                <LocalizedText Name="Maximum" Text="Maximum" />
+                <LocalizedText Name="Minimum" Text="Minimum" />
+                <LocalizedText Name="Style" Text="Linienstil" />
+                <LocalizedText Name="TrendText" Text="Trend" />
+                <LocalizedText Name="Unit" Text="Einheit" />
+                <LocalizedText Name="ItemAlias" Text="Variablenname" />
+              </Node>
+              <Node Name="ClientRun">
+                <LocalizedText Name="CLIENT_RUN_ERROR_1" Text="Remoting-Registrierung (@1s@) fehlgeschlagen, Fehler: @2s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_2" Text="VisiWin.Server konnte nicht gestartet werden, Fehler: @1s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_3" Text="Verbindung zum Kernel kann nicht aufgebaut werden: @1s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_4" Text="Fehler beim Laden des Kernel-Kommunikators: @1s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_5" Text="Entwicklungsdongle ohne Erlaubnis für VisiWin!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_6" Text="Es sollen mehr Viewer angemeldet werden, als die Lizenz erlaubt!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_7" Text="Dongle ohne Erlaubnis für Fernzugriff oder mehrere Clients!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_8" Text="Es sollen mehr Clients angemeldet werden, als die Lizenz erlaubt!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_9" Text="Ungültiger Softwareschutz (VisiWin32? VisiWinStudio?) für VisiWin!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_10" Text="Demomodus! Die Applikation wird nach einer Stunde beendet." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_11" Text="Applikation läuft vier Stunden mit beschränkter Lizenz für Applikationsentwicklung." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_12" Text="Serverprojekt konnte nicht gestartet werden, siehe VisiWin-Manager Diagnose." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_13" Text="Applikationstestzeit abgelaufen, System fährt herunter." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_14" Text="Fehler bei internem Aufruf von &quot;@1s@&quot;: @2s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_15" Text="Server @1s@ nicht in Verwaltungsliste gefunden." />
+                <LocalizedText Name="CLIENT_RUN_ERROR_16" Text="... Server @1s@ auf Maschine @2s@ wieder verbunden, Erfolg: @3s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_17" Text="@1s@: Viewer-Clients dürfen den Prozess nicht verändern!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_18" Text="Verbindung zu Server @1s@ auf Maschine @2s@ verloren!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_19" Text="Server @1s@ auf Maschine @2s@ wird neu gestartet!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_20" Text="Verbindung zu Server @1s@ auf Maschine @2s@ verloren, Fehler: @3s@!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_21" Text="VisiWin TCP/IP Kommunikation: kann Server @1s@ nicht erreichen!" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_22" Text="VisiWin TCP/IP Kommunikationsfehler: @1s@\nFehlermeldung: @2s@" />
+                <LocalizedText Name="CLIENT_RUN_ERROR_23" Text="Projektstart wird wegen Zeitüberlauf (@1n@ Sek.) abgebrochen, eventuell laufen die gestarteten Server noch." />
+                <LocalizedText Name="CLIENT_RUN_TRACE_1" Text="Starte Server @1s@ ..." />
+                <LocalizedText Name="CLIENT_RUN_TRACE_2" Text="Gültige Lizenz vom Server bekommen." />
+                <LocalizedText Name="CLIENT_RUN_TRACE_3" Text="... Server @1s@ auf Maschine @2s@ gestartet, Erfolg: @3s@" />
+                <LocalizedText Name="CLIENT_RUN_TRACE_4" Text="Alle Server gestartet, InitReady" />
+                <LocalizedText Name="CLIENT_RUN_TRACE_5" Text="Verbindung zu Server @1s@ auf Maschine @2s@ wieder aufgebaut" />
+              </Node>
+            </Node>
+            <Node Name="Dialogs">
+              <Node Name="Common">
+                <LocalizedText Name="cmdOK" Text="OK" />
+                <LocalizedText Name="cmdCancel" Text="Abbrechen" />
+                <LocalizedText Name="cmdClose" Text="Schließen" />
+                <LocalizedText Name="cmdYes" Text="Ja" />
+                <LocalizedText Name="cmdNo" Text="Nein" />
+                <LocalizedText Name="cmdAdd" Text="Hinzufügen ..." />
+                <LocalizedText Name="cmdRemove" Text="Entfernen" />
+                <LocalizedText Name="cmdEdit" Text="Bearbeiten ..." />
+                <LocalizedText Name="cmdChange" Text="Ändern ..." />
+                <LocalizedText Name="cmdAbort" Text="Abbrechen" />
+                <LocalizedText Name="cmdRetry" Text="Wiederholen" />
+                <LocalizedText Name="cmdIgnore" Text="Ignorieren" />
+                <LocalizedText Name="cmdActivate" Text="Aktivieren" />
+                <LocalizedText Name="cmdDeactivate" Text="Deaktivieren" />
+                <LocalizedText Name="cmdApply" Text="Übernehmen" />
+                <LocalizedText Name="cmdDiscard" Text="Verwerfen" />
+                <LocalizedText Name="cmdOpen" Text="Öffnen ..." />
+                <LocalizedText Name="cmdSave" Text="Speichern" />
+                <LocalizedText Name="cmdSaveAs" Text="Speichern unter ..." />
+                <LocalizedText Name="cmdSearch" Text="Suchen ..." />
+                <LocalizedText Name="cmdBack" Text="Zurück" />
+                <LocalizedText Name="cmdForward" Text="Vor" />
+                <LocalizedText Name="cmdLoad" Text="Laden" />
+                <LocalizedText Name="cmdDelete" Text="Löschen" />
+              </Node>
+              <Node Name="Recipe">
+                <LocalizedText Name="capLoadRecipe" Text="Rezept laden" />
+                <LocalizedText Name="capSaveRecipe" Text="Rezept speichern" />
+                <LocalizedText Name="lblFileName" Text="Rezeptname" />
+                <LocalizedText Name="lblFileDescription" Text="Beschreibung" />
+                <LocalizedText Name="lblExistingFiles" Text="Vorhandene Rezepte" />
+                <LocalizedText Name="ConfirmOverwrite" Text="Das Rezept &quot;{0}&quot; existiert bereits.\nWollen Sie es ersetzen?" />
+                <LocalizedText Name="ConfirmDelete" Text="Wollen Sie das Rezept &quot;{0}&quot; wirklich löschen?" />
+              </Node>
+              <Node Name="UserManagement">
+                <Node Name="AddGroupSuccess">
+                  <LocalizedText Name="GroupAlreadyDefined" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <LocalizedText Name="WrongParam" Text="Falscher Parameter!" />
+                  <LocalizedText Name="NoName" Text="Bitte einen Namen eingeben!" />
+                  <LocalizedText Name="NoLevel" Text="Bitte eine Autorisierungsebene eingeben!" />
+                </Node>
+                <Node Name="AddRightSuccess">
+                  <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <LocalizedText Name="WrongParam" Text="Falscher Parameter!" />
+                  <LocalizedText Name="NoName" Text="Bitte einen Namen eingeben!" />
+                  <LocalizedText Name="RightAlreadyDefined" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                </Node>
+                <Node Name="AddUserSuccess">
+                  <LocalizedText Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  <LocalizedText Name="InvalidPassword" Text="Das Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                  <LocalizedText Name="InvalidPasswordLength" Text="Das Passwort ist zu kurz!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <LocalizedText Name="NoCharactersInPassword" Text="Das Passwort muss Buchstaben enthalten!" />
+                  <LocalizedText Name="NoNumbersInPassword" Text="Das Passwort muss Ziffern enthalten!" />
+                  <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="Das Passwort muss Sonderzeichen enthalten!" />
+                  <LocalizedText Name="UnableToSaveUser" Text="Kann Benutzerdaten nicht speichern!" />
+                  <LocalizedText Name="UserExists" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <LocalizedText Name="NoName" Text="Bitte einen Namen eingeben!" />
+                  <LocalizedText Name="NoUserGroup" Text="Bitte Benutzergruppe auswählen!" />
+                  <LocalizedText Name="PasswordsNotEqual" Text="Die Wiederholung des Passwortes ist nicht identisch mit dem Passwort!" />
+                  <LocalizedText Name="FullUserExists" Text="Der volle Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <LocalizedText Name="MachineCodeExists" Text="Der Code existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <LocalizedText Name="NoFullName" Text="Bitte einen vollen Namen eingeben!" />
+                  <LocalizedText Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                </Node>
+                <Node Name="ChangeGroupSuccess">
+                  <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <LocalizedText Name="UnknownGroup" Text="Die Benutzergruppe ist unbekannt!" />
+                  <LocalizedText Name="DeleteNotPermitted" Text="Die Benutzergruppe darf aufgrund der Gruppeneinstellungen nicht entfernt werden!" />
+                </Node>
+                <Node Name="ChangePasswordSuccess">
+                  <LocalizedText Name="CantAccessDomainInfo" Text="Kann Benutzerdaten nicht speichern, weil kein Zugriff auf die zentrale Benutzerverwaltung besteht!" />
+                  <LocalizedText Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <LocalizedText Name="NewPasswordInvalid" Text="Das neue Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                  <LocalizedText Name="NewPasswordInvalidLength" Text="Das neue Passwort ist zu kurz!" />
+                  <LocalizedText Name="NoCharactersInPassword" Text="Das neue Passwort muss Buchstaben enthalten!" />
+                  <LocalizedText Name="NoNumbersInPassword" Text="Das neue Passwort muss Ziffern enthalten!" />
+                  <LocalizedText Name="OldPasswordInvalid" Text="Das Passwort ist falsch!\nBitte wiederholen Sie die Eingabe!" />
+                  <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="Das neue Passwort muss Sonderzeichen enthalten!" />
+                  <LocalizedText Name="UnableToSavePassword" Text="Kann Benutzerdaten nicht speichern!" />
+                  <LocalizedText Name="UnknownUser" Text="Der Benutzer ist unbekannt!" />
+                  <LocalizedText Name="NewPasswordsNotEqual" Text="Die Wiederholung des neuen Passwortes ist nicht identisch mit dem neuen Passwort!" />
+                  <LocalizedText Name="NoCurrentUser" Text="Es ist kein Benutzer angemeldet!" />
+                  <LocalizedText Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                </Node>
+                <Node Name="ChangeRightSuccess">
+                  <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <LocalizedText Name="UnableToSaveRight" Text="Kann Daten nicht speichern!" />
+                  <LocalizedText Name="UnknownRight" Text="Die Berechtigung ist unbekannt!" />
+                  <LocalizedText Name="WrongParam" Text="Falscher Parameter!" />
+                </Node>
+                <Node Name="ChangeUserSuccess">
+                  <LocalizedText Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  <LocalizedText Name="InvalidPassword" Text="Das Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                  <LocalizedText Name="InvalidPasswordLength" Text="Das Passwort ist zu kurz!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <LocalizedText Name="NoCharactersInPassword" Text="Das Passwort muss Buchstaben enthalten!" />
+                  <LocalizedText Name="NoNumbersInPassword" Text="Das Passwort muss Ziffern enthalten!" />
+                  <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="Das Passwort muss Sonderzeichen enthalten!" />
+                  <LocalizedText Name="UnableToSaveUser" Text="Kann Benutzerdaten nicht speichern!" />
+                  <LocalizedText Name="UnknownUser" Text="Der Benutzer ist unbekannt!" />
+                  <LocalizedText Name="UnknownUserClass" Text="Die Benutzergruppe ist unbekannt!" />
+                  <LocalizedText Name="FullUserExists" Text="Der volle Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <LocalizedText Name="MachineCodeExists" Text="Der Code existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <LocalizedText Name="InvalidUserClass" Text="Aufgrund der Gruppeneinstellungen darf diese Benutzergruppe nicht für den Benutzer ausgewählt werden!" />
+                  <LocalizedText Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                </Node>
+                <Node Name="LogOnSuccess">
+                  <LocalizedText Name="CantAccessDomainInfo" Text="Auf die zentrale Benutzerverwaltung kann nicht zugegriffen werden!\nBitte wenden Sie sich an den Systemadministrator!" />
+                  <LocalizedText Name="InvalidPassword" Text="Der Benutzername oder das Passwort sind nicht korrekt!" />
+                  <LocalizedText Name="PasswordExpired" Text="Die Gültigkeitsdauer des Passwortes ist abgelaufen!" />
+                  <LocalizedText Name="RenewPassword" Text="Das vom Administrator zugeteilte Passwort muss geändert werden!" />
+                  <LocalizedText Name="TooManyFailedLogOns" Text="Aufgrund zu vieler Anmeldefehlversuche wurde der Benutzer gesperrt!\nBitte wenden Sie sich an den Systemadministrator!" />
+                  <LocalizedText Name="UnknownUser" Text="Der Benutzername oder das Passwort sind nicht korrekt!" />
+                  <LocalizedText Name="UserDeactivated" Text="Der Benutzer ist deaktiviert!\nBitte wenden Sie sich an den Systemadministrator!" />
+                  <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <LocalizedText Name="NoCorrespondingLocalUserClass" Text="Der Benutzer kann nicht angemeldet werden, weil die Benutzergruppe der zentralen Benutzerverwaltung lokal nicht definiert ist!\nBitte wenden Sie sich an den Systemadministrator!" />
+                </Node>
+                <Node Name="UserStates">
+                  <LocalizedText Name="Deactivated" Text="Deaktiviert" />
+                  <LocalizedText Name="Active" Text="Aktiviert" />
+                  <LocalizedText Name="Invalidated" Text="Gesperrt" />
+                  <LocalizedText Name="PasswordExpired" Text="Aktiviert, beim nächsten Anmelden Passwort ändern" />
+                </Node>
+                <Node Name="RemoveUserSuccess">
+                  <LocalizedText Name="UnknownUser" Text="Der angegebene Benutzer wurde in der Benutzerverwaltung nicht gefunden." />
+                  <LocalizedText Name="UnknownGroup" Text="Eine Benutzergruppe mit diesem Namen ist nicht vorhanden." />
+                  <LocalizedText Name="MethodCallFailed" Text="Die Funktion konnte nicht ausgeführt werden. (Der Server ist derzeit nicht zugänglich.)" />
+                  <LocalizedText Name="UnableToSaveUser" Text="Der Server konnte die Informationen nicht speichern." />
+                  <LocalizedText Name="DeletePermitted" Text="Das Löschen des Benutzers ist nicht erlaubt." />
+                </Node>
+                <LocalizedText Name="capAddRight" Text="Berechtigung hinzufügen" />
+                <LocalizedText Name="capAddUser" Text="Benutzer hinzufügen" />
+                <LocalizedText Name="capAddUserGroup" Text="Benutzergruppe hinzufügen" />
+                <LocalizedText Name="capChangePassword" Text="Passwort ändern" />
+                <LocalizedText Name="capChangeRight" Text="Berechtigung ändern" />
+                <LocalizedText Name="capChangeUser" Text="Benutzer ändern" />
+                <LocalizedText Name="capChangeUserGroup" Text="Benutzergruppe ändern" />
+                <LocalizedText Name="capLogOn" Text="Benutzer anmelden" />
+                <LocalizedText Name="capRightsOverview" Text="Übersicht Berechtigungen" />
+                <LocalizedText Name="capUserGroupsOverview" Text="Übersicht Benutzergruppen" />
+                <LocalizedText Name="capUsersOverview" Text="Übersicht Benutzer" />
+                <LocalizedText Name="capVerify" Text="Benutzer verifizieren" />
+                <LocalizedText Name="chkDeactivationTimeActive" Text="Aktiv" />
+                <LocalizedText Name="chkRightActive" Text="Aktiv" />
+                <LocalizedText Name="chkUsersRemovable" Text="Benutzer dürfen entfernt werden" />
+                <LocalizedText Name="cmdLogOff" Text="Abmelden" />
+                <LocalizedText Name="cmdLogOn" Text="Anmelden" />
+                <LocalizedText Name="hdrActive" Text="Aktiv" />
+                <LocalizedText Name="hdrAutoLogOffTime" Text="Zeit bis zum automatischen Abmelden" />
+                <LocalizedText Name="hdrCode" Text="Code" />
+                <LocalizedText Name="hdrComment" Text="Kommentar" />
+                <LocalizedText Name="hdrDeactivationTime" Text="Deaktivierungs-\nzeitpunkt" />
+                <LocalizedText Name="hdrFullName" Text="Voller Name" />
+                <LocalizedText Name="hdrMaxFailedLogOns" Text="Max. erlaubte Anmelde-\nfehlversuche" />
+                <LocalizedText Name="hdrName" Text="Name" />
+                <LocalizedText Name="hdrRemainingLogOns" Text="Verbleibende Anmelde-\nversuche" />
+                <LocalizedText Name="hdrRenewPassword" Text="Passwort-\ngültigkeits-\ndauer" />
+                <LocalizedText Name="hdrRenewPasswordInterval" Text="Passwort-\nerneuerungs-\nintervall" />
+                <LocalizedText Name="hdrRights" Text="Rechte" />
+                <LocalizedText Name="hdrUserGroup" Text="Benutzergruppe" />
+                <LocalizedText Name="hdrUserGroups" Text="Benutzergruppen" />
+                <LocalizedText Name="hdrUserName" Text="Benutzername" />
+                <LocalizedText Name="hdrUsersCount" Text="Anzahl Benutzer" />
+                <LocalizedText Name="hdrUsersRemovable" Text="Benutzer entfernbar" />
+                <LocalizedText Name="hdrUserState" Text="Status" />
+                <LocalizedText Name="lblAutoLogOffTime" Text="Zeit bis zum automatischen Abmelden" />
+                <LocalizedText Name="lblComment" Text="Kommentar" />
+                <LocalizedText Name="lblDeactivation" Text="Deaktivierung" />
+                <LocalizedText Name="lblFullName" Text="Voller Name" />
+                <LocalizedText Name="lblMachineCode" Text="Code" />
+                <LocalizedText Name="lblMaxFailedLogOns" Text="Maximal erlaubte Anmeldefehlversuche" />
+                <LocalizedText Name="lblName" Text="Name" />
+                <LocalizedText Name="lblNewPassword" Text="Neues Passwort" />
+                <LocalizedText Name="lblPassword" Text="Passwort" />
+                <LocalizedText Name="lblRenewPasswordInterval" Text="Passworterneuerungsintervall" />
+                <LocalizedText Name="lblRepeatNewPassword" Text="Neues Passwort wiederholen" />
+                <LocalizedText Name="lblRepeatPassword" Text="Passwort wiederholen" />
+                <LocalizedText Name="lblState" Text="Status" />
+                <LocalizedText Name="lblUserGroup" Text="Benutzergruppe" />
+                <LocalizedText Name="lblUserName" Text="Benutzername" />
+                <LocalizedText Name="msgDeactivateUser" Text="Der Benutzer darf aufgrund der Gruppeneinstellungen nicht entfernt werden!\nSoll err stattdessen deaktiviert werden?" />
+                <LocalizedText Name="msgRemoveRight" Text="Soll die Berechtigung dauerhaft aus dem System entfernt werden?\nAchtung: Dadurch werden einige Bedienelemente ..." />
+                <LocalizedText Name="msgRemoveUser" Text="Soll der Benutzer dauerhaft aus dem System entfernt werden?" />
+                <LocalizedText Name="msgRemoveUserGroup" Text="Soll die Benutzergruppe dauerhaft aus dem System entfernt werden?\nAchtung: Dadurch werden auch alle Benutzer dieser Gruppe aus dem System entfernt!" />
+                <LocalizedText Name="rbtDeactivationDuration" Text="nach dem 1. Anmelden" />
+                <LocalizedText Name="rbtDeactivationTime" Text="zum Zeitpunkt" />
+                <LocalizedText Name="rbtNoDeactivation" Text="niemals" />
+                <LocalizedText Name="untAutoLogOffTime" Text="Minuten" />
+                <LocalizedText Name="untDays" Text="Tage" />
+                <LocalizedText Name="untHours" Text="Std." />
+                <LocalizedText Name="untMinutes" Text="Min." />
+                <LocalizedText Name="untRenewPasswordInterval" Text="Tage" />
+                <LocalizedText Name="chkChangePassword" Text="Passwort ändern" />
+                <LocalizedText Name="chkChangeMachineCode" Text="Code ändern" />
+                <LocalizedText Name="tpgStandard" Text="Standard" />
+                <LocalizedText Name="tpgExtended" Text="Erweitert" />
+                <LocalizedText Name="vinAuthorizationLevel" Text="Autorisierungsebene" />
+                <LocalizedText Name="hdrAuthorizationLevel" Text="Autori-\nsierungs-\nebene" />
+                <LocalizedText Name="DeleteUserError" Text="Benutzer konnte nicht gelöscht werden!" />
+                <LocalizedText Name="AddUserError" Text="Benutzer konnte nicht angelegt werden!" />
+                <LocalizedText Name="ChangeUserError" Text="Benutzer konnte nicht geändert werden!" />
+                <LocalizedText Name="EnterUserName" Text="Bitte Benutzernamen angeben." />
+                <LocalizedText Name="UserExistError" Text="Benutzer existiert bereits, bitte anderen Namen eingeben!" />
+                <LocalizedText Name="EnterGroupName" Text="Bitte Gruppennamen eingeben." />
+                <LocalizedText Name="EnterOldPassword" Text="Bitte altes Passwort angeben." />
+                <LocalizedText Name="EnterRepeatedPassword" Text="Bitte Passwort zweimal eingeben." />
+                <LocalizedText Name="EnterDifferentPassword" Text="Das neue Passwort muss sich vom alten unterscheiden." />
+                <LocalizedText Name="EnterDate" Text="Bitte Datum angeben." />
+                <LocalizedText Name="CodeExistError" Text="Code existiert bereits!" />
+                <LocalizedText Name="EnterUserState" Text="Bitte Benutzerstatus angeben." />
+                <LocalizedText Name="DeleteUserProhibited" Text="Löschen des Benutzers wegen Verstoß gegen die Gruppenrichtlinien nicht erlaubt!" />
+                <LocalizedText Name="DeleteUserOK" Text="Löschen des Benutzers war erfolgreich." />
+                <LocalizedText Name="AddUserOK" Text="Hinzufügen des Benutzers war erfolgreich." />
+                <LocalizedText Name="ChangeUserOK" Text="Die Änderung des Benutzers war erfolgreich." />
+                <LocalizedText Name="AddGroupOK" Text="Hinzufügen der Benutzergruppe war erfolgreich." />
+                <LocalizedText Name="AddGroupError" Text="Benutzergruppe konnte nicht angelegt werden!" />
+                <LocalizedText Name="DeleteGroupOK" Text="Löschen der Benutzergruppe war erfolgreich." />
+                <LocalizedText Name="DeleteGroupError" Text="Benutzergruppe konnte nicht gelöscht werden!" />
+                <LocalizedText Name="ChangeGroupOK" Text="Ändern der Benutzergruppe war erfolgreich." />
+                <LocalizedText Name="ChangeGroupError" Text="Benutzergruppe konnte nicht geändert werden!" />
+                <LocalizedText Name="AddRightOK" Text="Hinzufügen der Berechtigung war erfolgreich." />
+                <LocalizedText Name="AddRightError" Text="Berechtigung konnte nicht angelegt werden!" />
+                <LocalizedText Name="ChangeRightOK" Text="Ändern der Berechtigung war erfolgreich." />
+                <LocalizedText Name="ChangeRightError" Text="Die Berechtigung konnte nicht geändert werden!" />
+                <LocalizedText Name="DeleteRightOK" Text="Löschen der Berechtigung war erfolgreich." />
+                <LocalizedText Name="DeleteRightError" Text="Die Berechtigung konnte nicht gelöscht werden!" />
+                <LocalizedText Name="EnterSamePassword" Text="Das wiederholte Passwort darf sich nicht vom echten Passwort unterscheiden." />
+                <LocalizedText Name="ChooseGroup" Text="Bitte eine Benutzergruppe auswählen." />
+                <LocalizedText Name="ChooseRight" Text="Bitte eine Berechtigung auswählen." />
+                <LocalizedText Name="GroupExistError" Text="Benutzergruppe existiert bereits, bitte anderen Namen eingeben!" />
+                <LocalizedText Name="ChooseState" Text="Bitte Benutzerstatus auswählen." />
+                <LocalizedText Name="ChangePasswordError" Text="Passwort konnte nicht geändert werden!" />
+                <LocalizedText Name="DeleteUserQuery" Text="Wollen Sie diesen Benutzer wirklich löschen?" />
+                <LocalizedText Name="DeleteGroupQuery" Text="Wollen Sie diese Benutzergruppe wirklich löschen?" />
+                <LocalizedText Name="DeleteRightQuery" Text="Wollen Sie dieses Benutzerrecht wirklich löschen?" />
+                <LocalizedText Name="EnterPassword" Text="Bitte Passwort angeben." />
+                <LocalizedText Name="LogOffError" Text="Der Benutzer konnte nicht abgemeldet werden!" />
+                <LocalizedText Name="LogOnError" Text="Der Benutzer konnte nicht angemeldet werden!" />
+                <LocalizedText Name="ChooseUser" Text="Bitte Benutzer angeben." />
+                <LocalizedText Name="LogOnOK" Text="Benutzer erfolgreich angemeldet." />
+                <LocalizedText Name="LogOffOK" Text="Benutzer erfolgreich abgemeldet." />
+                <LocalizedText Name="ChangePasswordOK" Text="Passwort wurde erfolgreich geändert." />
+                <LocalizedText Name="EnterRightName" Text="Bitte Rechtenamen angeben." />
+                <LocalizedText Name="NewPasswordsNotEqual" Text="Die Wiederholung des neuen Passwortes ist nicht identisch mit dem neuen Passwort!" />
+                <LocalizedText Name="EnterNewPassword" Text="Bitte neues Passwort angeben." />
+                <LocalizedText Name="capRemoveUser" Text="Benutzer entfernen" />
+              </Node>
+              <Node Name="Printing">
+                <Node Name="Progress">
+                  <LocalizedText Name="Caption" Text="Drucken" />
+                  <LocalizedText Name="Ready" Text="Bereit" />
+                  <LocalizedText Name="PageNumber" Text="Seite @1n@ von @2n@" />
+                  <LocalizedText Name="Loading" Text="Lade Dokument(e)" />
+                  <LocalizedText Name="Cancelling" Text="Drucken wird abgebrochen ..." />
+                  <LocalizedText Name="Printing" Text="Drucke &quot;@1s@&quot; ..." />
+                  <LocalizedText Name="PrintScreen" Text="Drucke Bildschirm" />
+                </Node>
+                <Node Name="Settings">
+                  <LocalizedText Name="Caption" Text="Einstellungen für Standarddrucker" />
+                  <LocalizedText Name="Printer" Text="Drucker" />
+                  <LocalizedText Name="Type" Text="Typ" />
+                  <LocalizedText Name="Port" Text="Schnittstelle / Netzwerkpfad" />
+                  <LocalizedText Name="Color" Text="Farbe" />
+                  <LocalizedText Name="PageSettings" Text="Seiteneinstellungen" />
+                  <LocalizedText Name="PaperSize" Text="Papierformat" />
+                  <LocalizedText Name="Orientation" Text="Ausrichtung" />
+                  <LocalizedText Name="Portrait" Text="Hochformat" />
+                  <LocalizedText Name="Landscape" Text="Querformat" />
+                </Node>
+              </Node>
+            </Node>
+            <Node Name="Application">
+              <Node Name="UserManagement">
+                <Node Name="Results">
+                  <Node Name="AddGroupSuccess">
+                    <LocalizedText Name="GroupAlreadyDefined" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                    <LocalizedText Name="WrongParam" Text="Falscher Parameter!" />
+                    <LocalizedText Name="NoName" Text="Bitte einen Namen eingeben!" />
+                    <LocalizedText Name="NoLevel" Text="Bitte eine Autorisierungsebene eingeben!" />
+                  </Node>
+                  <Node Name="AddRightSuccess">
+                    <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                    <LocalizedText Name="WrongParam" Text="Falscher Parameter!" />
+                    <LocalizedText Name="NoName" Text="Bitte einen Namen eingeben!" />
+                    <LocalizedText Name="RightAlreadyDefined" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  </Node>
+                  <Node Name="AddUserSuccess">
+                    <LocalizedText Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                    <LocalizedText Name="InvalidPassword" Text="Das Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                    <LocalizedText Name="InvalidPasswordLength" Text="Das Passwort ist zu kurz!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                    <LocalizedText Name="NoCharactersInPassword" Text="Das Passwort muss Buchstaben enthalten!" />
+                    <LocalizedText Name="NoNumbersInPassword" Text="Das Passwort muss Ziffern enthalten!" />
+                    <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="Das Passwort muss Sonderzeichen enthalten!" />
+                    <LocalizedText Name="UnableToSaveUser" Text="Kann Benutzerdaten nicht speichern!" />
+                    <LocalizedText Name="UserExists" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                    <LocalizedText Name="NoName" Text="Bitte einen Namen eingeben!" />
+                    <LocalizedText Name="NoUserGroup" Text="Bitte Benutzergruppe auswählen!" />
+                    <LocalizedText Name="PasswordsNotEqual" Text="Die Wiederholung des Passwortes ist nicht identisch mit dem Passwort!" />
+                    <LocalizedText Name="FullUserExists" Text="Der volle Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                    <LocalizedText Name="MachineCodeExists" Text="Der Code existiert bereits!\nBitte wählen Sie einen anderen!" />
+                    <LocalizedText Name="NoFullName" Text="Bitte einen vollen Namen eingeben!" />
+                    <LocalizedText Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  </Node>
+                  <Node Name="ChangeGroupSuccess">
+                    <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                    <LocalizedText Name="UnknownGroup" Text="Die Benutzergruppe ist unbekannt!" />
+                    <LocalizedText Name="DeleteNotPermitted" Text="Die Benutzergruppe darf aufgrund der Gruppeneinstellungen nicht entfernt werden!" />
+                  </Node>
+                  <Node Name="ChangePasswordSuccess">
+                    <LocalizedText Name="CantAccessDomainInfo" Text="Kann Benutzerdaten nicht speichern, weil kein Zugriff auf die zentrale Benutzerverwaltung besteht!" />
+                    <LocalizedText Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                    <LocalizedText Name="NewPasswordInvalid" Text="Das neue Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                    <LocalizedText Name="NewPasswordInvalidLength" Text="Das neue Passwort ist zu kurz!" />
+                    <LocalizedText Name="NoCharactersInPassword" Text="Das neue Passwort muss Buchstaben enthalten!" />
+                    <LocalizedText Name="NoNumbersInPassword" Text="Das neue Passwort muss Ziffern enthalten!" />
+                    <LocalizedText Name="OldPasswordInvalid" Text="Das Passwort ist falsch!\nBitte wiederholen Sie die Eingabe!" />
+                    <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="Das neue Passwort muss Sonderzeichen enthalten!" />
+                    <LocalizedText Name="UnableToSavePassword" Text="Kann Benutzerdaten nicht speichern!" />
+                    <LocalizedText Name="UnknownUser" Text="Der Benutzer ist unbekannt!" />
+                    <LocalizedText Name="NewPasswordsNotEqual" Text="Die Wiederholung des neuen Passwortes ist nicht identisch mit dem neuen Passwort!" />
+                    <LocalizedText Name="NoCurrentUser" Text="Es ist kein Benutzer angemeldet!" />
+                    <LocalizedText Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  </Node>
+                  <Node Name="ChangeRightSuccess">
+                    <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                    <LocalizedText Name="UnableToSaveRight" Text="Kann Daten nicht speichern!" />
+                    <LocalizedText Name="UnknownRight" Text="Die Berechtigung ist unbekannt!" />
+                    <LocalizedText Name="WrongParam" Text="Falscher Parameter!" />
+                  </Node>
+                  <Node Name="ChangeUserSuccess">
+                    <LocalizedText Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                    <LocalizedText Name="InvalidPassword" Text="Das Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                    <LocalizedText Name="InvalidPasswordLength" Text="Das Passwort ist zu kurz!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                    <LocalizedText Name="NoCharactersInPassword" Text="Das Passwort muss Buchstaben enthalten!" />
+                    <LocalizedText Name="NoNumbersInPassword" Text="Das Passwort muss Ziffern enthalten!" />
+                    <LocalizedText Name="PasswordMustContainSpecialCharacters" Text="Das Passwort muss Sonderzeichen enthalten!" />
+                    <LocalizedText Name="UnableToSaveUser" Text="Kann Benutzerdaten nicht speichern!" />
+                    <LocalizedText Name="UnknownUser" Text="Der Benutzer ist unbekannt!" />
+                    <LocalizedText Name="UnknownUserClass" Text="Die Benutzergruppe ist unbekannt!" />
+                    <LocalizedText Name="FullUserExists" Text="Der volle Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                    <LocalizedText Name="MachineCodeExists" Text="Der Code existiert bereits!\nBitte wählen Sie einen anderen!" />
+                    <LocalizedText Name="InvalidUserClass" Text="Aufgrund der Gruppeneinstellungen darf diese Benutzergruppe nicht für den Benutzer ausgewählt werden!" />
+                    <LocalizedText Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  </Node>
+                  <Node Name="LogOnSuccess">
+                    <LocalizedText Name="CantAccessDomainInfo" Text="Auf die zentrale Benutzerverwaltung kann nicht zugegriffen werden!\nBitte wenden Sie sich an den Systemadministrator!" />
+                    <LocalizedText Name="InvalidPassword" Text="Der Benutzername oder das Passwort sind nicht korrekt!" />
+                    <LocalizedText Name="PasswordExpired" Text="Die Gültigkeitsdauer des Passwortes ist abgelaufen!" />
+                    <LocalizedText Name="RenewPassword" Text="Das vom Administrator zugeteilte Passwort muss geändert werden!" />
+                    <LocalizedText Name="TooManyFailedLogOns" Text="Aufgrund zu vieler Anmeldefehlversuche wurde der Benutzer gesperrt!\nBitte wenden Sie sich an den Systemadministrator!" />
+                    <LocalizedText Name="UnknownUser" Text="Der Benutzername oder das Passwort sind nicht korrekt!" />
+                    <LocalizedText Name="UserDeactivated" Text="Der Benutzer ist deaktiviert!\nBitte wenden Sie sich an den Systemadministrator!" />
+                    <LocalizedText Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                    <LocalizedText Name="NoCorrespondingLocalUserClass" Text="Der Benutzer kann nicht angemeldet werden, weil die Benutzergruppe der zentralen Benutzerverwaltung lokal nicht definiert ist!\nBitte wenden Sie sich an den Systemadministrator!" />
+                  </Node>
+                  <LocalizedText Name="DeleteUserError" Text="Benutzer konnte nicht gelöscht werden!" />
+                  <LocalizedText Name="AddUserError" Text="Benutzer konnte nicht angelegt werden!" />
+                  <LocalizedText Name="ChangeUserError" Text="Benutzer konnte nicht geändert werden!" />
+                  <LocalizedText Name="EnterUserName" Text="Bitte Benutzernamen angeben." />
+                  <LocalizedText Name="UserExistError" Text="Benutzer existiert bereits, bitte anderen Namen eingeben!" />
+                  <LocalizedText Name="EnterGroupName" Text="Bitte Gruppennamen eingeben." />
+                  <LocalizedText Name="EnterOldPassword" Text="Bitte altes Passwort angeben." />
+                  <LocalizedText Name="EnterRepeatedPassword" Text="Bitte Passwort zweimal eingeben." />
+                  <LocalizedText Name="EnterDifferentPassword" Text="Das neue Passwort muss sich vom alten unterscheiden." />
+                  <LocalizedText Name="EnterDate" Text="Bitte Datum angeben." />
+                  <LocalizedText Name="CodeExistError" Text="Code existiert bereits!" />
+                  <LocalizedText Name="EnterUserState" Text="Bitte Benutzerstatus angeben." />
+                  <LocalizedText Name="DeleteUserProhibited" Text="Löschen des Benutzers wegen Verstoß gegen die Gruppenrichtlinien nicht erlaubt!" />
+                  <LocalizedText Name="DeleteUserOK" Text="Löschen des Benutzers war erfolgreich." />
+                  <LocalizedText Name="AddUserOK" Text="Hinzufügen des Benutzers war erfolgreich." />
+                  <LocalizedText Name="ChangeUserOK" Text="Die Änderung des Benutzers war erfolgreich." />
+                  <LocalizedText Name="AddGroupOK" Text="Hinzufügen der Benutzergruppe war erfolgreich." />
+                  <LocalizedText Name="AddGroupError" Text="Benutzergruppe konnte nicht angelegt werden!" />
+                  <LocalizedText Name="DeleteGroupOK" Text="Löschen der Benutzergruppe war erfolgreich." />
+                  <LocalizedText Name="DeleteGroupError" Text="Benutzergruppe konnte nicht gelöscht werden!" />
+                  <LocalizedText Name="ChangeGroupOK" Text="Ändern der Benutzergruppe war erfolgreich." />
+                  <LocalizedText Name="ChangeGroupError" Text="Benutzergruppe konnte nicht geändert werden!" />
+                  <LocalizedText Name="AddRightOK" Text="Hinzufügen der Berechtigung war erfolgreich." />
+                  <LocalizedText Name="AddRightError" Text="Berechtigung konnte nicht angelegt werden!" />
+                  <LocalizedText Name="ChangeRightOK" Text="Ändern der Berechtigung war erfolgreich." />
+                  <LocalizedText Name="ChangeRightError" Text="Die Berechtigung konnte nicht geändert werden!" />
+                  <LocalizedText Name="DeleteRightOK" Text="Löschen der Berechtigung war erfolgreich." />
+                  <LocalizedText Name="DeleteRightError" Text="Die Berechtigung konnte nicht gelöscht werden!" />
+                  <LocalizedText Name="EnterSamePassword" Text="Das wiederholte Passwort darf sich nicht vom echten Passwort unterscheiden." />
+                  <LocalizedText Name="ChooseGroup" Text="Bitte eine Benutzergruppe auswählen." />
+                  <LocalizedText Name="ChooseRight" Text="Bitte eine Berechtigung auswählen." />
+                  <LocalizedText Name="GroupExistError" Text="Benutzergruppe existiert bereits, bitte anderen Namen eingeben!" />
+                  <LocalizedText Name="ChooseState" Text="Bitte Benutzerstatus auswählen." />
+                  <LocalizedText Name="ChangePasswordError" Text="Passwort konnte nicht geändert werden!" />
+                  <LocalizedText Name="DeleteUserQuery" Text="Wollen Sie diesen Benutzer wirklich löschen?" />
+                  <LocalizedText Name="DeleteGroupQuery" Text="Wollen Sie diese Benutzergruppe wirklich löschen?" />
+                  <LocalizedText Name="DeleteRightQuery" Text="Wollen Sie dieses Benutzerrecht wirklich löschen?" />
+                  <LocalizedText Name="EnterPassword" Text="Bitte Passwort angeben." />
+                  <LocalizedText Name="LogOffError" Text="Der Benutzer konnte nicht abgemeldet werden!" />
+                  <LocalizedText Name="LogOnError" Text="Der Benutzer konnte nicht angemeldet werden!" />
+                  <LocalizedText Name="ChooseUser" Text="Bitte Benutzer angeben." />
+                  <LocalizedText Name="LogOnOK" Text="Benutzer erfolgreich angemeldet." />
+                  <LocalizedText Name="LogOffOK" Text="Benutzer erfolgreich abgemeldet." />
+                  <LocalizedText Name="ChangePasswordOK" Text="Passwort wurde erfolgreich geändert." />
+                  <LocalizedText Name="EnterRightName" Text="Bitte Rechtenamen angeben." />
+                </Node>
+                <Node Name="UserStates">
+                  <LocalizedText Name="Deactivated" Text="Deaktiviert" />
+                  <LocalizedText Name="Active" Text="Aktiviert" />
+                  <LocalizedText Name="Invalidated" Text="Gesperrt" />
+                  <LocalizedText Name="PasswordExpired" Text="Aktiviert, Passwort ändern" />
+                </Node>
+                <Node Name="View">
+                  <Node Name="Buttons">
+                    <LocalizedText Name="LogOn" Text="Anmelden" />
+                    <LocalizedText Name="LogOff" Text="Abmelden" />
+                    <LocalizedText Name="LogOnOff" Text="An-/Abmelden" />
+                    <LocalizedText Name="ChangeCurrentPassword" Text="Aktuelles Passwort ändern" />
+                    <LocalizedText Name="Add" Text="Hinzufügen" />
+                    <LocalizedText Name="Change" Text="Ändern" />
+                    <LocalizedText Name="Remove" Text="Entfernen" />
+                    <LocalizedText Name="ChangePassword" Text="Passwort ändern" />
+                  </Node>
+                  <Node Name="Grid">
+                    <LocalizedText Name="UserName" Text="Name" />
+                    <LocalizedText Name="FullUserName" Text="Vollständiger Name" />
+                    <LocalizedText Name="State" Text="Status" />
+                    <LocalizedText Name="Group" Text="Benutzergruppe" />
+                    <LocalizedText Name="MaxErrorLogOn" Text="Anmeldungs-\nFehlversuche" />
+                    <LocalizedText Name="PasswordInterval" Text="Passwort\nerneuern" />
+                    <LocalizedText Name="UserRemovable" Text="Löschbar" />
+                    <LocalizedText Name="TimeToAutoLogOff" Text="Autom.\nabmelden" />
+                    <LocalizedText Name="Comment" Text="Kommentar" />
+                    <LocalizedText Name="Right" Text="Berechtigung" />
+                    <LocalizedText Name="GroupText" Text="Bezeichnung" />
+                    <LocalizedText Name="RightText" Text="Name" />
+                    <LocalizedText Name="RightActive" Text="Aktiv" />
+                  </Node>
+                  <LocalizedText Name="AddUser" Text="Benutzer hinzufügen" />
+                  <LocalizedText Name="DeleteUser" Text="Benutzer löschen" />
+                  <LocalizedText Name="ChangeUser" Text="Benutzer ändern" />
+                  <LocalizedText Name="AddGroup" Text="Benutzergruppe hinzufügen" />
+                  <LocalizedText Name="DeleteGroup" Text="Benutzergruppe löschen" />
+                  <LocalizedText Name="ChangeGroup" Text="Benutzergruppe ändern" />
+                  <LocalizedText Name="AddRight" Text="Berechtigung hinzufügen" />
+                  <LocalizedText Name="DeleteRight" Text="Berechtigung löschen" />
+                  <LocalizedText Name="ChangeRight" Text="Berechtigung ändern" />
+                  <LocalizedText Name="UserName" Text="Name" />
+                  <LocalizedText Name="FullUserName" Text="Vollständiger Name" />
+                  <LocalizedText Name="Code" Text="Code" />
+                  <LocalizedText Name="UserGroup" Text="Benutzergruppe" />
+                  <LocalizedText Name="Password" Text="Passwort" />
+                  <LocalizedText Name="SecondPassword" Text="Neues Passwort wiederholen" />
+                  <LocalizedText Name="Status" Text="Bearbeitungsstatus" />
+                  <LocalizedText Name="Deactivation" Text="Deaktivierung" />
+                  <LocalizedText Name="DeactNever" Text="Nie" />
+                  <LocalizedText Name="DeactOnDate" Text="Datum" />
+                  <LocalizedText Name="DeactAfterTime" Text="Nach" />
+                  <LocalizedText Name="Change" Text="ändern" />
+                  <LocalizedText Name="Days" Text="Tagen" />
+                  <LocalizedText Name="Hours" Text="Std" />
+                  <LocalizedText Name="Minutes" Text="Min" />
+                  <LocalizedText Name="UserGroupName" Text="Name" />
+                  <LocalizedText Name="UserNameWithBinding" Text="Benutzername mit Adapterbindung" />
+                  <LocalizedText Name="TimeToAutoLogOff" Text="Zeit bis zum autom. Abmelden" />
+                  <LocalizedText Name="RenewPassword" Text="Passwort erneuern nach" />
+                  <LocalizedText Name="MaximumLogOnAttempts" Text="Max. Anmeldeversuche" />
+                  <LocalizedText Name="Comment" Text="Kommentar" />
+                  <LocalizedText Name="Rights" Text="Berechtigungen" />
+                  <LocalizedText Name="ChangePassword" Text="Passwort ändern" />
+                  <LocalizedText Name="LogOnOff" Text="Benutzer an-/abmelden" />
+                  <LocalizedText Name="RightName" Text="Name" />
+                  <LocalizedText Name="UserGroups" Text="Benutzergruppen" />
+                  <LocalizedText Name="Active" Text="Aktiv" />
+                  <LocalizedText Name="OldPassword" Text="Altes Passwort" />
+                  <LocalizedText Name="CurrentUser" Text="Aktueller Benutzer" />
+                  <LocalizedText Name="Overview" Text="Übersicht" />
+                  <LocalizedText Name="Users" Text="Benutzer" />
+                  <LocalizedText Name="UserNameWithSystemVariables" Text="Benutzername mit Systemvariablen" />
+                  <LocalizedText Name="UsersRemovable" Text="Benutzer entfernbar" />
+                  <LocalizedText Name="NoUser" Text="Kein Benutzer hinterlegt" />
+                  <LocalizedText Name="NewPassword" Text="Neues Passwort" />
+                </Node>
+                <LocalizedText Name="InitError" Text="Initialisierungsfehler Benuterverwaltung" />
+              </Node>
+              <Node Name="Views">
+                <Node Name="Footer">
+                  <LocalizedText Name="Home" Text="Home" />
+                  <LocalizedText Name="Machine" Text="Maschine" />
+                  <LocalizedText Name="Exit" Text="Beenden" />
+                </Node>
+                <Node Name="Header">
+                  <LocalizedText Name="NoUserLoggedOn" Text="Kein Benutzer angemeldet" />
+                  <LocalizedText Name="quit an alarm" Text="Quittieren" />
+                </Node>
+              </Node>
+              <Node Name="Events">
+                <Node Name="EventFilter">
+                  <Node Name="EventCategory">
+                    <LocalizedText Name="Success" Text="Erfolg" />
+                    <LocalizedText Name="Informational" Text="Information" />
+                    <LocalizedText Name="Warning" Text="Warnung" />
+                    <LocalizedText Name="Error" Text="Fehler" />
+                    <LocalizedText Name="Fatal" Text="Fatal" />
+                  </Node>
+                  <Node Name="TimespanFilter">
+                    <LocalizedText Name="Today" Text="Heute" />
+                    <LocalizedText Name="Yesterday" Text="Gestern" />
+                    <LocalizedText Name="ThisWeek" Text="Diese Woche" />
+                    <LocalizedText Name="LastWeek" Text="Letzte Woche" />
+                    <LocalizedText Name="Custom" Text="Benutzerdefiniert" />
+                    <LocalizedText Name="None" Text="Keine" />
+                  </Node>
+                  <LocalizedText Name="Timespan" Text="Zeitspanne" />
+                  <LocalizedText Name="Categories" Text="Kategorien" />
+                  <LocalizedText Name="From" Text="Von" />
+                  <LocalizedText Name="To" Text="Bis" />
+                  <LocalizedText Name="Settings" Text="Einstellungen" />
+                  <LocalizedText Name="Colors" Text="Farben" />
+                  <LocalizedText Name="SuccessColor" Text="Erfolgsfarbe" />
+                  <LocalizedText Name="InformationalColor" Text="Informationsfarbe" />
+                  <LocalizedText Name="WarningColor" Text="Warnungsfarbe" />
+                  <LocalizedText Name="ErrorColor" Text="Fehlerfarbe" />
+                  <LocalizedText Name="FatalColor" Text="Fatalfarbe" />
+                  <LocalizedText Name="Foreground" Text="Vordergrundfarbe" />
+                  <LocalizedText Name="Background" Text="Hintergrundfarbe" />
+                </Node>
+                <Node Name="EventView">
+                  <LocalizedText Name="Events" Text="Ereignisse" />
+                  <LocalizedText Name="SearchText" Text="Suchtext" />
+                  <LocalizedText Name="TimeStamp" Text="Zeitstempel" />
+                  <LocalizedText Name="Thread" Text="Thread" />
+                  <LocalizedText Name="Category" Text="Kategorie" />
+                  <LocalizedText Name="Source" Text="Quelle" />
+                  <LocalizedText Name="LogText" Text="Protokolltext" />
+                  <LocalizedText Name="LogFilePath" Text="Protokolldateipfad:" />
+                  <LocalizedText Name="SearchTextWatermark" Text="Geben Sie Ihren Suchtext ein" />
+                  <LocalizedText Name="CurrentEventCount" Text="Aktuelle Anzahl der Ereignisse:" />
+                  <LocalizedText Name="Of" Text="von" />
+                </Node>
+              </Node>
+              <LocalizedText Name="LanguageComboBoxItem1031" Text="DE" />
+              <LocalizedText Name="LanguageComboBoxItem1033" Text="ENG" />
+            </Node>
+          </Language.LocalizedTexts>
+        </Language>
+      </LanguageSystem.Languages>
+      <LanguageSystem.TextGroups>
+        <TextGroup Name="Application">
+          <TextGroup.TextGroups>
+            <TextGroup Name="UserManagement">
+              <TextGroup.TextGroups>
+                <TextGroup Name="Results">
+                  <TextGroup.TextGroups>
+                    <TextGroup Name="AddGroupSuccess">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="GroupAlreadyDefined" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn diese bereits existiert" />
+                        <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wobei die Ursache aber nicht festgestellt werden kann" />
+                        <TextDefinition Name="WrongParam" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn ein falscher Parameter angegeben wurde" />
+                        <TextDefinition Name="NoName" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn der Name nicht angegeben wurde" />
+                        <TextDefinition Name="NoLevel" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn die Benutzerebene nicht angegeben wurde" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="AddRightSuccess">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Hinzufügen einer Berechtigung wobei die Ursache aber nicht festgestellt werden kann" />
+                        <TextDefinition Name="WrongParam" Comment="Fehlermeldung beim Hinzufügen einer Berechtigung wenn ein falscher Parameter angegeben wurde" />
+                        <TextDefinition Name="NoName" Comment="Fehlermeldung beim Hinzufügen einer Berechtigung wenn der Name nicht angegeben wurde" />
+                        <TextDefinition Name="RightAlreadyDefined" Comment="Fehlermeldung beim Hinzufügen einer Berechtigung wenn diese bereits existiert" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="AddUserSuccess">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="ForbiddenPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort in der Liste der verbotenen Passwörter enthalten ist" />
+                        <TextDefinition Name="InvalidPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wobei das Passwort ungültig ist" />
+                        <TextDefinition Name="InvalidPasswordLength" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort zu kurz ist" />
+                        <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                        <TextDefinition Name="NoCharactersInPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Buchstaben enthält" />
+                        <TextDefinition Name="NoNumbersInPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Ziffern enthält" />
+                        <TextDefinition Name="PasswordMustContainSpecialCharacters" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Sonderzeichen enthält" />
+                        <TextDefinition Name="UnableToSaveUser" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn die Daten nicht gespeichert werden können" />
+                        <TextDefinition Name="UserExists" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der Benutzername bereits existiert" />
+                        <TextDefinition Name="NoName" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der Benutzername nicht angegeben wurde" />
+                        <TextDefinition Name="NoUserGroup" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn die Benutzergruppe nicht angegeben wurde" />
+                        <TextDefinition Name="PasswordsNotEqual" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort nicht mit der Wiederholung identisch ist" />
+                        <TextDefinition Name="FullUserExists" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der volle Benutzername bereits existiert" />
+                        <TextDefinition Name="MachineCodeExists" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der maschinelle Code bereits existiert" />
+                        <TextDefinition Name="NoFullName" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der volle Benutzername nicht angegeben wurde" />
+                        <TextDefinition Name="LockedPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort zurzeit nicht verwendet werden darf" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="ChangeGroupSuccess">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Ändern einer Benutzergruppe wobei die Ursache aber nicht festgestellt werden kann" />
+                        <TextDefinition Name="UnknownGroup" Comment="Fehlermeldung beim Ändern einer Benutzergruppe wenn die genannte Benutzergruppe nicht existiert" />
+                        <TextDefinition Name="DeleteNotPermitted" Comment="Fehlermeldung beim Löschen einer Benutzergruppe wenn das Löschen nicht erlaubt ist" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="ChangePasswordSuccess">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="CantAccessDomainInfo" Comment="Fehlermeldung beim Ändern des Passwortes wenn die zentrale Benutzerverwaltung nicht erreichbar ist" />
+                        <TextDefinition Name="ForbiddenPassword" Comment="Fehlermeldung beim Ändern des Passwortes wenn es in der Liste der verbotenen Passwörter enthalten ist" />
+                        <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Ändern des Passwortes wobei die Ursache aber nicht festgestellt werden kann" />
+                        <TextDefinition Name="NewPasswordInvalid" Comment="Fehlermeldung beim Ändern des Passwortes wenn es ungültig ist" />
+                        <TextDefinition Name="NewPasswordInvalidLength" Comment="Fehlermeldung beim Ändern des Passwortes wenn es zu kurz ist" />
+                        <TextDefinition Name="NoCharactersInPassword" Comment="Fehlermeldung beim Ändern des Passwortes wenn es keine Buchstaben enthält" />
+                        <TextDefinition Name="NoNumbersInPassword" Comment="Fehlermeldung beim Ändern des Passwortes wenn es keine Ziffern enthält" />
+                        <TextDefinition Name="OldPasswordInvalid" Comment="Fehlermeldung beim Ändern des Passwortes wenn das bisherige Passwort falsch eingegeben wurde" />
+                        <TextDefinition Name="PasswordMustContainSpecialCharacters" Comment="Fehlermeldung beim Ändern des Passwortes wenn es keine Sonderzeichen enthält" />
+                        <TextDefinition Name="UnableToSavePassword" Comment="Fehlermeldung beim Ändern des Passwortes wenn die Daten nicht gespeichert werden können" />
+                        <TextDefinition Name="UnknownUser" Comment="Fehlermeldung beim Ändern des Passwortes wenn der angegebene Benutzer nicht existiert" />
+                        <TextDefinition Name="NewPasswordsNotEqual" Comment="Fehlermeldung beim Ändern des Passwortes wenn das Passwort nicht mit der Wiederholung identisch ist" />
+                        <TextDefinition Name="NoCurrentUser" Comment="Fehlermeldung beim Ändern des Passwortes wenn kein Benutzer angemeldet ist" />
+                        <TextDefinition Name="LockedPassword" Comment="Fehlermeldung beim Ändern des Passwortes weil es zurzeit nicht verwendet werden darf" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="ChangeRightSuccess">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Ändern einer Berechtigung wobei die Ursache aber nicht festgestellt werden kann" />
+                        <TextDefinition Name="UnableToSaveRight" Comment="Fehlermeldung beim Ändern einer Berechtigung wenn die Daten nicht gespeichert werden können" />
+                        <TextDefinition Name="UnknownRight" Comment="Fehlermeldung beim Ändern einer Berechtigung wenn sie nicht existiert" />
+                        <TextDefinition Name="WrongParam" Comment="Fehlermeldung beim Ändern einer Berechtigung wenn ein falscher Parameter angegeben wurde" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="ChangeUserSuccess">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="ForbiddenPassword" Comment="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort in der Liste der verbotenen Passwörter enthalten ist" />
+                        <TextDefinition Name="InvalidPassword" Comment="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort ungültig ist" />
+                        <TextDefinition Name="InvalidPasswordLength" Comment="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort zu kurz ist" />
+                        <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Ändern eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                        <TextDefinition Name="NoCharactersInPassword" Comment="Fehlermeldung beim Ändern eines Benutzers wenn es keine Buchstaben enthält" />
+                        <TextDefinition Name="NoNumbersInPassword" Comment="Fehlermeldung beim Ändern eines Benutzers wenn es keine Ziffern enthält" />
+                        <TextDefinition Name="PasswordMustContainSpecialCharacters" Comment="Fehlermeldung beim Ändern eines Benutzers wenn es keine Sonderzeichen enthält" />
+                        <TextDefinition Name="UnableToSaveUser" Comment="Fehlermeldung beim Ändern eines Benutzers wenn die Daten nicht gespeichert werden können" />
+                        <TextDefinition Name="UnknownUser" Comment="Fehlermeldung beim Ändern eines Benutzers wenn der angegebene Benutzer nicht existiert" />
+                        <TextDefinition Name="UnknownUserClass" Comment="Fehlermeldung beim Ändern eines Benutzers wenn die angegebene Benutzergruppe nicht existiert" />
+                        <TextDefinition Name="FullUserExists" Comment="Fehlermeldung beim Ändern eines Benutzers wenn der volle Benutzername bereits existiert" />
+                        <TextDefinition Name="MachineCodeExists" Comment="Fehlermeldung beim Ändern eines Benutzers wenn der maschinelle Code bereits existiert" />
+                        <TextDefinition Name="InvalidUserClass" Comment="Fehlermeldung beim Ändern eines Benutzers wenn die angegebene Benutzergruppe für den Benutzer ungültig ist" />
+                        <TextDefinition Name="LockedPassword" Comment="Fehlermeldung beim Ändern eines Benutzers weil das Passwort zurzeit nicht verwendet werden darf" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="LogOnSuccess">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="CantAccessDomainInfo" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn die zentrale Benutzerverwaltung nicht erreichbar ist" />
+                        <TextDefinition Name="InvalidPassword" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort falsch ist" />
+                        <TextDefinition Name="PasswordExpired" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort abgelaufen ist" />
+                        <TextDefinition Name="RenewPassword" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort geändert werden muss" />
+                        <TextDefinition Name="TooManyFailedLogOns" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer aufgrund zu vieler Anmeldefehlversuche deaktiviert wurde" />
+                        <TextDefinition Name="UnknownUser" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer unbekannt ist" />
+                        <TextDefinition Name="UserDeactivated" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer deaktiviert ist" />
+                        <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Anmelden eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                        <TextDefinition Name="NoCorrespondingLocalUserClass" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn die Benutzergruppe der zentralen Benutzerverwaltung lokal nicht definiert ist" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                  </TextGroup.TextGroups>
+                  <TextGroup.Texts>
+                    <TextDefinition Name="DeleteUserError" Comment="Fehler beim Löschen des Benutzers" />
+                    <TextDefinition Name="AddUserError" Comment="Fehler beim Anlegen eines Benutzers" />
+                    <TextDefinition Name="ChangeUserError" Comment="Fehler beim Ändern eines Benutzers" />
+                    <TextDefinition Name="EnterUserName" Comment="Bitte Benutzernamen angeben" />
+                    <TextDefinition Name="UserExistError" Comment="Benutzer existiert bereits" />
+                    <TextDefinition Name="EnterGroupName" Comment="Bitte Gruppennamen eingeben" />
+                    <TextDefinition Name="EnterOldPassword" Comment="Bitte altes Passwort angeben" />
+                    <TextDefinition Name="EnterRepeatedPassword" Comment="Bitte Passwort zweimal eingeben" />
+                    <TextDefinition Name="EnterDifferentPassword" Comment="Neues Passwort muss anders als das alte sein" />
+                    <TextDefinition Name="EnterDate" Comment="Bitte Datum angeben" />
+                    <TextDefinition Name="CodeExistError" Comment="Code existiert bereits" />
+                    <TextDefinition Name="EnterUserState" Comment="Bitte Benutzerstatus angeben" />
+                    <TextDefinition Name="DeleteUserProhibited" Comment="Löschen des Benutzers nicht erlaubt" />
+                    <TextDefinition Name="DeleteUserOK" Comment="Löschen des Benutzers war erfolgreich" />
+                    <TextDefinition Name="AddUserOK" Comment="Hinzufügen des Benutzers war erfolgreich" />
+                    <TextDefinition Name="ChangeUserOK" Comment="Ändern des Benutzers war erfolgreich" />
+                    <TextDefinition Name="AddGroupOK" Comment="Hinzufügen der Benutzergruppe war erfolgreich" />
+                    <TextDefinition Name="AddGroupError" Comment="Fehler beim Anlegen einer Benutzergruppe" />
+                    <TextDefinition Name="DeleteGroupOK" Comment="Löschen der Benutzergruppe war erfolgreich" />
+                    <TextDefinition Name="DeleteGroupError" Comment="Fehler beim Löschen der Benutzergruppe" />
+                    <TextDefinition Name="ChangeGroupOK" Comment="Ändern der Benutzergruppe war erfolgreich" />
+                    <TextDefinition Name="ChangeGroupError" Comment="Fehler beim Ändern einer Benutzergruppe" />
+                    <TextDefinition Name="AddRightOK" Comment="Hinzufügen des Benutzerrechtes war erfolgreich" />
+                    <TextDefinition Name="AddRightError" Comment="Fehler beim Anlegen eines Benutzerrechtes" />
+                    <TextDefinition Name="ChangeRightOK" Comment="Ändern des Benutzerrechtes war erfolgreich" />
+                    <TextDefinition Name="ChangeRightError" Comment="Fehler beim Ändern eines Benutzerrechtes" />
+                    <TextDefinition Name="DeleteRightOK" Comment="Löschen des Benutzerrechtes war erfolgreich" />
+                    <TextDefinition Name="DeleteRightError" Comment="Fehler beim Löschen des Benutzerrechtes" />
+                    <TextDefinition Name="EnterSamePassword" Comment="Wiederholtes Passwort muss gleich dem Passwort sein" />
+                    <TextDefinition Name="ChooseGroup" Comment="Bitte Benutzergruppe auswählen" />
+                    <TextDefinition Name="ChooseRight" Comment="Bitte Benutzerrecht auswählen" />
+                    <TextDefinition Name="GroupExistError" Comment="Benutzergruppe existiert bereits" />
+                    <TextDefinition Name="ChooseState" Comment="Bitte Benutzerstatus auswählen" />
+                    <TextDefinition Name="ChangePasswordError" Comment="Fehler beim Ändern des Passwortes" />
+                    <TextDefinition Name="DeleteUserQuery" Comment="Benutzer wirklich löschen?" />
+                    <TextDefinition Name="DeleteGroupQuery" Comment="Benutzergruppe wirklich löschen?" />
+                    <TextDefinition Name="DeleteRightQuery" Comment="Recht wirklich löschen?" />
+                    <TextDefinition Name="EnterPassword" Comment="Bitte Passwort angeben" />
+                    <TextDefinition Name="LogOffError" Comment="Benutzer konnte nicht abgemeldet werden" />
+                    <TextDefinition Name="LogOnError" Comment="Benutzer konnte nicht angemeldet werden" />
+                    <TextDefinition Name="ChooseUser" Comment="Bitte Benutzer angeben" />
+                    <TextDefinition Name="LogOnOK" Comment="Benutzer erfolgreich angemeldet" />
+                    <TextDefinition Name="LogOffOK" Comment="Benutzer erfolgreich abgemeldet" />
+                    <TextDefinition Name="ChangePasswordOK" Comment="Ändern des Passwortes erfolgreich" />
+                    <TextDefinition Name="EnterRightName" Comment="Bitte Rechtenamen angeben." />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="UserStates">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="Deactivated" Comment="Benutzerstatus" />
+                    <TextDefinition Name="Active" Comment="Benutzerstatus" />
+                    <TextDefinition Name="Invalidated" Comment="Benutzerstatus" />
+                    <TextDefinition Name="PasswordExpired" Comment="Benutzerstatus" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="View">
+                  <TextGroup.TextGroups>
+                    <TextGroup Name="Buttons">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="LogOn" Comment="Anmelden" />
+                        <TextDefinition Name="LogOff" Comment="Abmelden" />
+                        <TextDefinition Name="LogOnOff" Comment="An-/Abmelden" />
+                        <TextDefinition Name="ChangeCurrentPassword" Comment="Aktuelles Passwort ändern" />
+                        <TextDefinition Name="Add" Comment="Hinzufügen" />
+                        <TextDefinition Name="Change" Comment="Ändern" />
+                        <TextDefinition Name="Remove" Comment="Entfernen" />
+                        <TextDefinition Name="ChangePassword" Comment="Passwort ändern" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="Grid">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="UserName" Comment="Benutzername" />
+                        <TextDefinition Name="FullUserName" Comment="Vollständiger Benutzername" />
+                        <TextDefinition Name="State" Comment="Status" />
+                        <TextDefinition Name="Group" Comment="Gruppe" />
+                        <TextDefinition Name="MaxErrorLogOn" Comment="Fehlversuche LogOn" />
+                        <TextDefinition Name="PasswordInterval" Comment="Passwort erneuern" />
+                        <TextDefinition Name="UserRemovable" Comment="Löschbar" />
+                        <TextDefinition Name="TimeToAutoLogOff" Comment="Autom. Abmelden" />
+                        <TextDefinition Name="Comment" Comment="Kommentar" />
+                        <TextDefinition Name="Right" Comment="Recht" />
+                        <TextDefinition Name="GroupText" Comment="Gruppentext" />
+                        <TextDefinition Name="RightText" Comment="Name" />
+                        <TextDefinition Name="RightActive" Comment="Aktiv" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                  </TextGroup.TextGroups>
+                  <TextGroup.Texts>
+                    <TextDefinition Name="AddUser" Comment="Benutzer hinzufügen" />
+                    <TextDefinition Name="DeleteUser" Comment="Benutzer löschen" />
+                    <TextDefinition Name="ChangeUser" Comment="Benutzer ändern" />
+                    <TextDefinition Name="AddGroup" Comment="Benutzergruppe hinzufügen" />
+                    <TextDefinition Name="DeleteGroup" Comment="Benutzergruppe löschen" />
+                    <TextDefinition Name="ChangeGroup" Comment="Benutzergruppe ändern" />
+                    <TextDefinition Name="AddRight" Comment="Recht hinzufügen" />
+                    <TextDefinition Name="DeleteRight" Comment="Recht löschen" />
+                    <TextDefinition Name="ChangeRight" Comment="Recht ändern" />
+                    <TextDefinition Name="UserName" Comment="Benutzername" />
+                    <TextDefinition Name="FullUserName" Comment="Vollständiger Benutzername" />
+                    <TextDefinition Name="Code" Comment="Code" />
+                    <TextDefinition Name="UserGroup" Comment="Benutzergruppe" />
+                    <TextDefinition Name="Password" Comment="Passwort" />
+                    <TextDefinition Name="SecondPassword" Comment="Zweite Passworteingabe" />
+                    <TextDefinition Name="Status" Comment="Status" />
+                    <TextDefinition Name="Deactivation" Comment="Deaktivierung" />
+                    <TextDefinition Name="DeactNever" Comment="Deaktivierung nie" />
+                    <TextDefinition Name="DeactOnDate" Comment="Deaktivierung zu einem Datum" />
+                    <TextDefinition Name="DeactAfterTime" Comment="Deaktivierung nach dem Einloggen" />
+                    <TextDefinition Name="Change" Comment="Ändern" />
+                    <TextDefinition Name="Days" Comment="Tagen" />
+                    <TextDefinition Name="Hours" Comment="Stunden" />
+                    <TextDefinition Name="Minutes" Comment="Minuten" />
+                    <TextDefinition Name="UserGroupName" Comment="Gruppenname" />
+                    <TextDefinition Name="UserNameWithBinding" Comment="Benutzername mit Adapterbindung" />
+                    <TextDefinition Name="TimeToAutoLogOff" Comment="Zeit bis zum autom. Abmelden" />
+                    <TextDefinition Name="RenewPassword" Comment="Passwort erneuen" />
+                    <TextDefinition Name="MaximumLogOnAttempts" Comment="Maximale Anzahl Anmeldeversuche" />
+                    <TextDefinition Name="Comment" Comment="Kommentar" />
+                    <TextDefinition Name="Rights" Comment="Rechte" />
+                    <TextDefinition Name="ChangePassword" Comment="Passwort ändern" />
+                    <TextDefinition Name="LogOnOff" Comment="Benutzer an-/abmelden" />
+                    <TextDefinition Name="RightName" Comment="Name des Rechtes" />
+                    <TextDefinition Name="UserGroups" Comment="Gruppen" />
+                    <TextDefinition Name="Active" Comment="Aktiv" />
+                    <TextDefinition Name="OldPassword" Comment="Altes Passwort" />
+                    <TextDefinition Name="CurrentUser" Comment="Aktueller Benutzer" />
+                    <TextDefinition Name="Overview" Comment="Übersicht" />
+                    <TextDefinition Name="Users" Comment="Benutzer" />
+                    <TextDefinition Name="UserNameWithSystemVariables" Comment="Benutzername mit Systemvariablen" />
+                    <TextDefinition Name="UsersRemovable" Comment="Benutzer entfernbar" />
+                    <TextDefinition Name="NoUser" Comment="Kein Benutzer hinterlegt" />
+                    <TextDefinition Name="NewPassword" Comment="Neues Passwort" />
+                  </TextGroup.Texts>
+                </TextGroup>
+              </TextGroup.TextGroups>
+              <TextGroup.Texts>
+                <TextDefinition Name="InitError" Comment="Initialisierungsfehler" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="Views">
+              <TextGroup.TextGroups>
+                <TextGroup Name="Footer">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="Home" />
+                    <TextDefinition Name="Machine" />
+                    <TextDefinition Name="Exit" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="Header">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="NoUserLoggedOn" />
+                    <TextDefinition Name="quit an alarm" />
+                  </TextGroup.Texts>
+                </TextGroup>
+              </TextGroup.TextGroups>
+            </TextGroup>
+            <TextGroup Name="Events">
+              <TextGroup.TextGroups>
+                <TextGroup Name="EventFilter">
+                  <TextGroup.TextGroups>
+                    <TextGroup Name="EventCategory">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="Success" />
+                        <TextDefinition Name="Informational" />
+                        <TextDefinition Name="Warning" />
+                        <TextDefinition Name="Error" />
+                        <TextDefinition Name="Fatal" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                    <TextGroup Name="TimespanFilter">
+                      <TextGroup.Texts>
+                        <TextDefinition Name="Today" />
+                        <TextDefinition Name="Yesterday" />
+                        <TextDefinition Name="ThisWeek" />
+                        <TextDefinition Name="LastWeek" />
+                        <TextDefinition Name="Custom" />
+                        <TextDefinition Name="None" />
+                      </TextGroup.Texts>
+                    </TextGroup>
+                  </TextGroup.TextGroups>
+                  <TextGroup.Texts>
+                    <TextDefinition Name="Timespan" />
+                    <TextDefinition Name="Categories" />
+                    <TextDefinition Name="From" />
+                    <TextDefinition Name="To" />
+                    <TextDefinition Name="Settings" />
+                    <TextDefinition Name="Colors" />
+                    <TextDefinition Name="SuccessColor" />
+                    <TextDefinition Name="InformationalColor" />
+                    <TextDefinition Name="WarningColor" />
+                    <TextDefinition Name="ErrorColor" />
+                    <TextDefinition Name="FatalColor" />
+                    <TextDefinition Name="Foreground" />
+                    <TextDefinition Name="Background" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="EventView">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="Events" />
+                    <TextDefinition Name="SearchText" />
+                    <TextDefinition Name="TimeStamp" />
+                    <TextDefinition Name="Thread" />
+                    <TextDefinition Name="Category" />
+                    <TextDefinition Name="Source" />
+                    <TextDefinition Name="LogText" />
+                    <TextDefinition Name="LogFilePath" />
+                    <TextDefinition Name="SearchTextWatermark" />
+                    <TextDefinition Name="CurrentEventCount" />
+                    <TextDefinition Name="Of" />
+                  </TextGroup.Texts>
+                </TextGroup>
+              </TextGroup.TextGroups>
+            </TextGroup>
+          </TextGroup.TextGroups>
+          <TextGroup.Texts>
+            <TextDefinition Name="LanguageComboBoxItem1031" />
+            <TextDefinition Name="LanguageComboBoxItem1033" />
+          </TextGroup.Texts>
+        </TextGroup>
+        <TextGroup Name="Components">
+          <TextGroup.TextGroups>
+            <TextGroup Name="AlarmLine">
+              <TextGroup.Texts>
+                <TextDefinition Name="AcknowledgeTime" />
+                <TextDefinition Name="ActivationCounter" />
+                <TextDefinition Name="ActivationTime" />
+                <TextDefinition Name="Class" />
+                <TextDefinition Name="Count" />
+                <TextDefinition Name="DeactivationTime" />
+                <TextDefinition Name="Group" />
+                <TextDefinition Name="Param1" />
+                <TextDefinition Name="Param2" />
+                <TextDefinition Name="Priority" />
+                <TextDefinition Name="State" />
+                <TextDefinition Name="Symbol" />
+                <TextDefinition Name="Text" />
+                <TextDefinition Name="Machine" />
+                <TextDefinition Name="User" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="AlarmList">
+              <TextGroup.Texts>
+                <TextDefinition Name="AcknowledgeTime" />
+                <TextDefinition Name="ActivationCounter" />
+                <TextDefinition Name="ActivationTime" />
+                <TextDefinition Name="Class" />
+                <TextDefinition Name="Count" />
+                <TextDefinition Name="DeactivationTime" />
+                <TextDefinition Name="Group" />
+                <TextDefinition Name="Param1" />
+                <TextDefinition Name="Param2" />
+                <TextDefinition Name="Priority" />
+                <TextDefinition Name="State" />
+                <TextDefinition Name="Symbol" />
+                <TextDefinition Name="Text" />
+                <TextDefinition Name="Machine" />
+                <TextDefinition Name="User" />
+                <TextDefinition Name="NotesCount" />
+                <TextDefinition Name="FileName" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="NoteList">
+              <TextGroup.Texts>
+                <TextDefinition Name="Note" />
+                <TextDefinition Name="TimeStamp" />
+                <TextDefinition Name="User" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="PopupInfo">
+              <TextGroup.Texts>
+                <TextDefinition Name="Caption" />
+                <TextDefinition Name="LimitMax" />
+                <TextDefinition Name="LimitMin" />
+                <TextDefinition Name="Default" />
+                <TextDefinition Name="Alias" />
+                <TextDefinition Name="ID" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="RecipeList">
+              <TextGroup.Texts>
+                <TextDefinition Name="FileName" />
+                <TextDefinition Name="FileDescription" />
+                <TextDefinition Name="FileChangedBy" />
+                <TextDefinition Name="FileChangedAt" />
+                <TextDefinition Name="FileChangesCount" />
+                <TextDefinition Name="FileNotesCount" />
+                <TextDefinition Name="ItemAlias" />
+                <TextDefinition Name="ItemText" />
+                <TextDefinition Name="ItemValue" />
+                <TextDefinition Name="ItemUnit" />
+                <TextDefinition Name="ItemMinValue" />
+                <TextDefinition Name="ItemMaxValue" />
+                <TextDefinition Name="ItemDefaultValue" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="Time">
+              <TextGroup.TextGroups>
+                <TextGroup Name="DateFormats">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="LongDate" />
+                    <TextDefinition Name="ShortDate" />
+                    <TextDefinition Name="NamedLongDate" />
+                    <TextDefinition Name="NamedShortDate" />
+                    <TextDefinition Name="UserDefinedDate" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="MonthName">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="1" />
+                    <TextDefinition Name="2" />
+                    <TextDefinition Name="3" />
+                    <TextDefinition Name="4" />
+                    <TextDefinition Name="5" />
+                    <TextDefinition Name="6" />
+                    <TextDefinition Name="7" />
+                    <TextDefinition Name="8" />
+                    <TextDefinition Name="9" />
+                    <TextDefinition Name="10" />
+                    <TextDefinition Name="11" />
+                    <TextDefinition Name="12" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="ShortMonthName">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="1" />
+                    <TextDefinition Name="2" />
+                    <TextDefinition Name="3" />
+                    <TextDefinition Name="4" />
+                    <TextDefinition Name="5" />
+                    <TextDefinition Name="6" />
+                    <TextDefinition Name="7" />
+                    <TextDefinition Name="8" />
+                    <TextDefinition Name="9" />
+                    <TextDefinition Name="10" />
+                    <TextDefinition Name="11" />
+                    <TextDefinition Name="12" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="ShortWeekdayName">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="1" />
+                    <TextDefinition Name="2" />
+                    <TextDefinition Name="3" />
+                    <TextDefinition Name="4" />
+                    <TextDefinition Name="5" />
+                    <TextDefinition Name="6" />
+                    <TextDefinition Name="7" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="TimeFormats">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="LongTime" />
+                    <TextDefinition Name="ShortTime" />
+                    <TextDefinition Name="UserDefinedTime" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="WeekdayName">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="1" />
+                    <TextDefinition Name="2" />
+                    <TextDefinition Name="3" />
+                    <TextDefinition Name="4" />
+                    <TextDefinition Name="5" />
+                    <TextDefinition Name="6" />
+                    <TextDefinition Name="7" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="Common">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="Hour" />
+                    <TextDefinition Name="Minute" />
+                    <TextDefinition Name="Second" />
+                    <TextDefinition Name="Millisecond" />
+                  </TextGroup.Texts>
+                </TextGroup>
+              </TextGroup.TextGroups>
+              <TextGroup.Texts>
+                <TextDefinition Name="FirstDayOfWeek" />
+                <TextDefinition Name="FirstWeekOfYear" />
+                <TextDefinition Name="WeekNumberLong" />
+                <TextDefinition Name="WeekNumberShort" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="TrendLegend">
+              <TextGroup.Texts>
+                <TextDefinition Name="ArchiveText" />
+                <TextDefinition Name="Color" />
+                <TextDefinition Name="ItemText" />
+                <TextDefinition Name="MarkedValue" />
+                <TextDefinition Name="Maximum" />
+                <TextDefinition Name="Minimum" />
+                <TextDefinition Name="Style" />
+                <TextDefinition Name="TrendText" />
+                <TextDefinition Name="Unit" />
+                <TextDefinition Name="ItemAlias" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="ClientRun">
+              <TextGroup.Texts>
+                <TextDefinition Name="CLIENT_RUN_ERROR_1" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_2" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_3" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_4" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_5" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_6" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_7" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_8" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_9" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_10" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_11" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_12" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_13" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_14" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_15" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_16" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_17" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_18" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_19" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_20" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_21" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_22" />
+                <TextDefinition Name="CLIENT_RUN_ERROR_23" />
+                <TextDefinition Name="CLIENT_RUN_TRACE_1" />
+                <TextDefinition Name="CLIENT_RUN_TRACE_2" />
+                <TextDefinition Name="CLIENT_RUN_TRACE_3" />
+                <TextDefinition Name="CLIENT_RUN_TRACE_4" />
+                <TextDefinition Name="CLIENT_RUN_TRACE_5" />
+              </TextGroup.Texts>
+            </TextGroup>
+          </TextGroup.TextGroups>
+        </TextGroup>
+        <TextGroup Name="Dialogs">
+          <TextGroup.TextGroups>
+            <TextGroup Name="Common">
+              <TextGroup.Texts>
+                <TextDefinition Name="cmdOK" />
+                <TextDefinition Name="cmdCancel" />
+                <TextDefinition Name="cmdClose" />
+                <TextDefinition Name="cmdYes" />
+                <TextDefinition Name="cmdNo" />
+                <TextDefinition Name="cmdAdd" />
+                <TextDefinition Name="cmdRemove" />
+                <TextDefinition Name="cmdEdit" />
+                <TextDefinition Name="cmdChange" />
+                <TextDefinition Name="cmdAbort" />
+                <TextDefinition Name="cmdRetry" />
+                <TextDefinition Name="cmdIgnore" />
+                <TextDefinition Name="cmdActivate" />
+                <TextDefinition Name="cmdDeactivate" />
+                <TextDefinition Name="cmdApply" />
+                <TextDefinition Name="cmdDiscard" />
+                <TextDefinition Name="cmdOpen" />
+                <TextDefinition Name="cmdSave" />
+                <TextDefinition Name="cmdSaveAs" />
+                <TextDefinition Name="cmdSearch" />
+                <TextDefinition Name="cmdBack" />
+                <TextDefinition Name="cmdForward" />
+                <TextDefinition Name="cmdLoad" />
+                <TextDefinition Name="cmdDelete" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="Recipe">
+              <TextGroup.Texts>
+                <TextDefinition Name="capLoadRecipe" />
+                <TextDefinition Name="capSaveRecipe" />
+                <TextDefinition Name="lblFileName" />
+                <TextDefinition Name="lblFileDescription" />
+                <TextDefinition Name="lblExistingFiles" />
+                <TextDefinition Name="ConfirmOverwrite" />
+                <TextDefinition Name="ConfirmDelete" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="UserManagement">
+              <TextGroup.TextGroups>
+                <TextGroup Name="AddGroupSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="GroupAlreadyDefined" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn diese bereits existiert" />
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wobei die Ursache aber nicht festgestellt werden kann" />
+                    <TextDefinition Name="WrongParam" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn ein falscher Parameter angegeben wurde" />
+                    <TextDefinition Name="NoName" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn der Name nicht angegeben wurde" />
+                    <TextDefinition Name="NoLevel" Comment="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn die Benutzerebene nicht angegeben wurde" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="AddRightSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Hinzufügen einer Berechtigung wobei die Ursache aber nicht festgestellt werden kann" />
+                    <TextDefinition Name="WrongParam" Comment="Fehlermeldung beim Hinzufügen einer Berechtigung wenn ein falscher Parameter angegeben wurde" />
+                    <TextDefinition Name="NoName" Comment="Fehlermeldung beim Hinzufügen einer Berechtigung wenn der Name nicht angegeben wurde" />
+                    <TextDefinition Name="RightAlreadyDefined" Comment="Fehlermeldung beim Hinzufügen einer Berechtigung wenn diese bereits existiert" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="AddUserSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="ForbiddenPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort in der Liste der verbotenen Passwörter enthalten ist" />
+                    <TextDefinition Name="InvalidPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wobei das Passwort ungültig ist" />
+                    <TextDefinition Name="InvalidPasswordLength" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort zu kurz ist" />
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                    <TextDefinition Name="NoCharactersInPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Buchstaben enthält" />
+                    <TextDefinition Name="NoNumbersInPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Ziffern enthält" />
+                    <TextDefinition Name="PasswordMustContainSpecialCharacters" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Sonderzeichen enthält" />
+                    <TextDefinition Name="UnableToSaveUser" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn die Daten nicht gespeichert werden können" />
+                    <TextDefinition Name="UserExists" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der Benutzername bereits existiert" />
+                    <TextDefinition Name="NoName" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der Benutzername nicht angegeben wurde" />
+                    <TextDefinition Name="NoUserGroup" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn die Benutzergruppe nicht angegeben wurde" />
+                    <TextDefinition Name="PasswordsNotEqual" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort nicht mit der Wiederholung identisch ist" />
+                    <TextDefinition Name="FullUserExists" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der volle Benutzername bereits existiert" />
+                    <TextDefinition Name="MachineCodeExists" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der maschinelle Code bereits existiert" />
+                    <TextDefinition Name="NoFullName" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn der volle Benutzername nicht angegeben wurde" />
+                    <TextDefinition Name="LockedPassword" Comment="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort zurzeit nicht verwendet werden darf" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="ChangeGroupSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Ändern einer Benutzergruppe wobei die Ursache aber nicht festgestellt werden kann" />
+                    <TextDefinition Name="UnknownGroup" Comment="Fehlermeldung beim Ändern einer Benutzergruppe wenn die genannte Benutzergruppe nicht existiert" />
+                    <TextDefinition Name="DeleteNotPermitted" Comment="Fehlermeldung beim Löschen einer Benutzergruppe wenn das Löschen nicht erlaubt ist" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="ChangePasswordSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="CantAccessDomainInfo" Comment="Fehlermeldung beim Ändern des Passwortes wenn die zentrale Benutzerverwaltung nicht erreichbar ist" />
+                    <TextDefinition Name="ForbiddenPassword" Comment="Fehlermeldung beim Ändern des Passwortes wenn es in der Liste der verbotenen Passwörter enthalten ist" />
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Ändern des Passwortes wobei die Ursache aber nicht festgestellt werden kann" />
+                    <TextDefinition Name="NewPasswordInvalid" Comment="Fehlermeldung beim Ändern des Passwortes wenn es ungültig ist" />
+                    <TextDefinition Name="NewPasswordInvalidLength" Comment="Fehlermeldung beim Ändern des Passwortes wenn es zu kurz ist" />
+                    <TextDefinition Name="NoCharactersInPassword" Comment="Fehlermeldung beim Ändern des Passwortes wenn es keine Buchstaben enthält" />
+                    <TextDefinition Name="NoNumbersInPassword" Comment="Fehlermeldung beim Ändern des Passwortes wenn es keine Ziffern enthält" />
+                    <TextDefinition Name="OldPasswordInvalid" Comment="Fehlermeldung beim Ändern des Passwortes wenn das bisherige Passwort falsch eingegeben wurde" />
+                    <TextDefinition Name="PasswordMustContainSpecialCharacters" Comment="Fehlermeldung beim Ändern des Passwortes wenn es keine Sonderzeichen enthält" />
+                    <TextDefinition Name="UnableToSavePassword" Comment="Fehlermeldung beim Ändern des Passwortes wenn die Daten nicht gespeichert werden können" />
+                    <TextDefinition Name="UnknownUser" Comment="Fehlermeldung beim Ändern des Passwortes wenn der angegebene Benutzer nicht existiert" />
+                    <TextDefinition Name="NewPasswordsNotEqual" Comment="Fehlermeldung beim Ändern des Passwortes wenn das Passwort nicht mit der Wiederholung identisch ist" />
+                    <TextDefinition Name="NoCurrentUser" Comment="Fehlermeldung beim Ändern des Passwortes wenn kein Benutzer angemeldet ist" />
+                    <TextDefinition Name="LockedPassword" Comment="Fehlermeldung beim Ändern des Passwortes weil es zurzeit nicht verwendet werden darf" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="ChangeRightSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Ändern einer Berechtigung wobei die Ursache aber nicht festgestellt werden kann" />
+                    <TextDefinition Name="UnableToSaveRight" Comment="Fehlermeldung beim Ändern einer Berechtigung wenn die Daten nicht gespeichert werden können" />
+                    <TextDefinition Name="UnknownRight" Comment="Fehlermeldung beim Ändern einer Berechtigung wenn sie nicht existiert" />
+                    <TextDefinition Name="WrongParam" Comment="Fehlermeldung beim Ändern einer Berechtigung wenn ein falscher Parameter angegeben wurde" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="ChangeUserSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="ForbiddenPassword" Comment="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort in der Liste der verbotenen Passwörter enthalten ist" />
+                    <TextDefinition Name="InvalidPassword" Comment="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort ungültig ist" />
+                    <TextDefinition Name="InvalidPasswordLength" Comment="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort zu kurz ist" />
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Ändern eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                    <TextDefinition Name="NoCharactersInPassword" Comment="Fehlermeldung beim Ändern eines Benutzers wenn es keine Buchstaben enthält" />
+                    <TextDefinition Name="NoNumbersInPassword" Comment="Fehlermeldung beim Ändern eines Benutzers wenn es keine Ziffern enthält" />
+                    <TextDefinition Name="PasswordMustContainSpecialCharacters" Comment="Fehlermeldung beim Ändern eines Benutzers wenn es keine Sonderzeichen enthält" />
+                    <TextDefinition Name="UnableToSaveUser" Comment="Fehlermeldung beim Ändern eines Benutzers wenn die Daten nicht gespeichert werden können" />
+                    <TextDefinition Name="UnknownUser" Comment="Fehlermeldung beim Ändern eines Benutzers wenn der angegebene Benutzer nicht existiert" />
+                    <TextDefinition Name="UnknownUserClass" Comment="Fehlermeldung beim Ändern eines Benutzers wenn die angegebene Benutzergruppe nicht existiert" />
+                    <TextDefinition Name="FullUserExists" Comment="Fehlermeldung beim Ändern eines Benutzers wenn der volle Benutzername bereits existiert" />
+                    <TextDefinition Name="MachineCodeExists" Comment="Fehlermeldung beim Ändern eines Benutzers wenn der maschinelle Code bereits existiert" />
+                    <TextDefinition Name="InvalidUserClass" Comment="Fehlermeldung beim Ändern eines Benutzers wenn die angegebene Benutzergruppe für den Benutzer ungültig ist" />
+                    <TextDefinition Name="LockedPassword" Comment="Fehlermeldung beim Ändern eines Benutzers weil das Passwort zurzeit nicht verwendet werden darf" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="LogOnSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="CantAccessDomainInfo" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn die zentrale Benutzerverwaltung nicht erreichbar ist" />
+                    <TextDefinition Name="InvalidPassword" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort falsch ist" />
+                    <TextDefinition Name="PasswordExpired" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort abgelaufen ist" />
+                    <TextDefinition Name="RenewPassword" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort geändert werden muss" />
+                    <TextDefinition Name="TooManyFailedLogOns" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer aufgrund zu vieler Anmeldefehlversuche deaktiviert wurde" />
+                    <TextDefinition Name="UnknownUser" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer unbekannt ist" />
+                    <TextDefinition Name="UserDeactivated" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer deaktiviert ist" />
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Anmelden eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                    <TextDefinition Name="NoCorrespondingLocalUserClass" Comment="Fehlermeldung beim Anmelden eines Benutzers wenn die Benutzergruppe der zentralen Benutzerverwaltung lokal nicht definiert ist" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="UserStates">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="Deactivated" Comment="Benutzerstatus" />
+                    <TextDefinition Name="Active" Comment="Benutzerstatus" />
+                    <TextDefinition Name="Invalidated" Comment="Benutzerstatus" />
+                    <TextDefinition Name="PasswordExpired" Comment="Benutzerstatus" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="RemoveUserSuccess">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="UnknownUser" Comment="Fehlermeldung beim Entfernen eines Benutzers" />
+                    <TextDefinition Name="UnknownGroup" Comment="Fehlermeldung beim Entfernen eines Benutzers" />
+                    <TextDefinition Name="MethodCallFailed" Comment="Fehlermeldung beim Entfernen eines Benutzers" />
+                    <TextDefinition Name="UnableToSaveUser" Comment="Fehlermeldung beim Entfernen eines Benutzers" />
+                    <TextDefinition Name="DeletePermitted" Comment="Fehlermeldung beim Entfernen eines Benutzers" />
+                  </TextGroup.Texts>
+                </TextGroup>
+              </TextGroup.TextGroups>
+              <TextGroup.Texts>
+                <TextDefinition Name="capAddRight" Comment="Überschrift des Dialoges &quot;Berechtigung hinzufügen&quot;" />
+                <TextDefinition Name="capAddUser" Comment="Überschrift des Dialoges &quot;Benutzer hinzufügen&quot;" />
+                <TextDefinition Name="capAddUserGroup" Comment="Überschrift des Dialoges &quot;Benutzergruppe hinzufügen&quot;" />
+                <TextDefinition Name="capChangePassword" Comment="Überschrift des Dialoges &quot;Passwort ändern&quot;" />
+                <TextDefinition Name="capChangeRight" Comment="Überschrift des Dialoges &quot;Berechtigung ändern&quot;" />
+                <TextDefinition Name="capChangeUser" Comment="Überschrift des Dialoges &quot;Benutzer ändern&quot;" />
+                <TextDefinition Name="capChangeUserGroup" Comment="Überschrift des Dialoges &quot;Benutzergruppe ändern&quot;" />
+                <TextDefinition Name="capLogOn" Comment="Überschrift des Dialoges &quot;Benutzer anmelden&quot;" />
+                <TextDefinition Name="capRightsOverview" Comment="Überschrift des Dialoges &quot;Übersicht Berechtigungen&quot;" />
+                <TextDefinition Name="capUserGroupsOverview" Comment="Überschrift des Dialoges &quot;Übersicht Benutzergruppen&quot;" />
+                <TextDefinition Name="capUsersOverview" Comment="Überschrift des Dialoges &quot;Übersicht Benutzer&quot;" />
+                <TextDefinition Name="capVerify" Comment="Überschrift des Dialoges &quot;Benutzer verifizieren&quot;" />
+                <TextDefinition Name="chkDeactivationTimeActive" Comment="Beschriftung für Auswahlmöglichkeit" />
+                <TextDefinition Name="chkRightActive" Comment="Beschriftung für Auswahlmöglichkeit" />
+                <TextDefinition Name="chkUsersRemovable" Comment="Beschriftung für Auswahlmöglichkeit" />
+                <TextDefinition Name="cmdLogOff" Comment="Schaltflächenbeschriftung" />
+                <TextDefinition Name="cmdLogOn" Comment="Schaltflächenbeschriftung" />
+                <TextDefinition Name="hdrActive" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrAutoLogOffTime" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrCode" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrComment" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrDeactivationTime" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrFullName" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrMaxFailedLogOns" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrName" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrRemainingLogOns" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrRenewPassword" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrRenewPasswordInterval" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrRights" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrUserGroup" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrUserGroups" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrUserName" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrUsersCount" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrUsersRemovable" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="hdrUserState" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="lblAutoLogOffTime" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblComment" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblDeactivation" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblFullName" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblMachineCode" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblMaxFailedLogOns" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblName" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblNewPassword" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblPassword" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblRenewPasswordInterval" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblRepeatNewPassword" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblRepeatPassword" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblState" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblUserGroup" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="lblUserName" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="msgDeactivateUser" Comment="Nachfragetext zum Deaktivieren eines Benutzers" />
+                <TextDefinition Name="msgRemoveRight" Comment="Nachfragetext zum Entfernen einer Berechtigung" />
+                <TextDefinition Name="msgRemoveUser" Comment="Nachfragetext zum Entfernen eines Benutzers" />
+                <TextDefinition Name="msgRemoveUserGroup" Comment="Nachfragetext zum Entfernen einer Benutzergruppe inkl. aller Benutzer" />
+                <TextDefinition Name="rbtDeactivationDuration" Comment="Beschriftung für Auswahlalternative" />
+                <TextDefinition Name="rbtDeactivationTime" Comment="Beschriftung für Auswahlalternative" />
+                <TextDefinition Name="rbtNoDeactivation" Comment="Beschriftung für Auswahlalternative" />
+                <TextDefinition Name="untAutoLogOffTime" Comment="Einheitentext für Eingabeelement" />
+                <TextDefinition Name="untDays" Comment="Einheitentext für Eingabeelement" />
+                <TextDefinition Name="untHours" Comment="Einheitentext für Eingabeelement" />
+                <TextDefinition Name="untMinutes" Comment="Einheitentext für Eingabeelement" />
+                <TextDefinition Name="untRenewPasswordInterval" Comment="Einheitentext für Eingabeelement" />
+                <TextDefinition Name="chkChangePassword" Comment="Beschriftung für Auswahlmöglichkeit" />
+                <TextDefinition Name="chkChangeMachineCode" Comment="Beschriftung für Auswahlmöglichkeit" />
+                <TextDefinition Name="tpgStandard" Comment="Tabulatorbeschriftung" />
+                <TextDefinition Name="tpgExtended" Comment="Tabulatorbeschriftung" />
+                <TextDefinition Name="vinAuthorizationLevel" Comment="Beschriftung für Eingabeelement" />
+                <TextDefinition Name="hdrAuthorizationLevel" Comment="Spaltenüberschrift" />
+                <TextDefinition Name="DeleteUserError" Comment="Fehler beim Löschen des Benutzers" />
+                <TextDefinition Name="AddUserError" Comment="Fehler beim Anlegen eines Benutzers" />
+                <TextDefinition Name="ChangeUserError" Comment="Fehler beim Ändern eines Benutzers" />
+                <TextDefinition Name="EnterUserName" Comment="Bitte Benutzernamen angeben" />
+                <TextDefinition Name="UserExistError" Comment="Benutzer existiert bereits" />
+                <TextDefinition Name="EnterGroupName" Comment="Bitte Gruppennamen eingeben" />
+                <TextDefinition Name="EnterOldPassword" Comment="Bitte altes Passwort angeben" />
+                <TextDefinition Name="EnterRepeatedPassword" Comment="Bitte Passwort zweimal eingeben" />
+                <TextDefinition Name="EnterDifferentPassword" Comment="Neues Passwort muss anders als das alte sein" />
+                <TextDefinition Name="EnterDate" Comment="Bitte Datum angeben" />
+                <TextDefinition Name="CodeExistError" Comment="Code existiert bereits" />
+                <TextDefinition Name="EnterUserState" Comment="Bitte Benutzerstatus angeben" />
+                <TextDefinition Name="DeleteUserProhibited" Comment="Löschen des Benutzers nicht erlaubt" />
+                <TextDefinition Name="DeleteUserOK" Comment="Löschen des Benutzers war erfolgreich" />
+                <TextDefinition Name="AddUserOK" Comment="Hinzufügen des Benutzers war erfolgreich" />
+                <TextDefinition Name="ChangeUserOK" Comment="Ändern des Benutzers war erfolgreich" />
+                <TextDefinition Name="AddGroupOK" Comment="Hinzufügen der Benutzergruppe war erfolgreich" />
+                <TextDefinition Name="AddGroupError" Comment="Fehler beim Anlegen einer Benutzergruppe" />
+                <TextDefinition Name="DeleteGroupOK" Comment="Löschen der Benutzergruppe war erfolgreich" />
+                <TextDefinition Name="DeleteGroupError" Comment="Fehler beim Löschen der Benutzergruppe" />
+                <TextDefinition Name="ChangeGroupOK" Comment="Ändern der Benutzergruppe war erfolgreich" />
+                <TextDefinition Name="ChangeGroupError" Comment="Fehler beim Ändern einer Benutzergruppe" />
+                <TextDefinition Name="AddRightOK" Comment="Hinzufügen des Benutzerrechtes war erfolgreich" />
+                <TextDefinition Name="AddRightError" Comment="Fehler beim Anlegen eines Benutzerrechtes" />
+                <TextDefinition Name="ChangeRightOK" Comment="Ändern des Benutzerrechtes war erfolgreich" />
+                <TextDefinition Name="ChangeRightError" Comment="Fehler beim Ändern eines Benutzerrechtes" />
+                <TextDefinition Name="DeleteRightOK" Comment="Löschen des Benutzerrechtes war erfolgreich" />
+                <TextDefinition Name="DeleteRightError" Comment="Fehler beim Löschen des Benutzerrechtes" />
+                <TextDefinition Name="EnterSamePassword" Comment="Wiederholtes Passwort muss gleich dem Passwort sein" />
+                <TextDefinition Name="ChooseGroup" Comment="Bitte Benutzergruppe auswählen" />
+                <TextDefinition Name="ChooseRight" Comment="Bitte Benutzerrecht auswählen" />
+                <TextDefinition Name="GroupExistError" Comment="Benutzergruppe existiert bereits" />
+                <TextDefinition Name="ChooseState" Comment="Bitte Benutzerstatus auswählen" />
+                <TextDefinition Name="ChangePasswordError" Comment="Fehler beim Ändern des Passwortes" />
+                <TextDefinition Name="DeleteUserQuery" Comment="Benutzer wirklich löschen?" />
+                <TextDefinition Name="DeleteGroupQuery" Comment="Benutzergruppe wirklich löschen?" />
+                <TextDefinition Name="DeleteRightQuery" Comment="Recht wirklich löschen?" />
+                <TextDefinition Name="EnterPassword" Comment="Bitte Passwort angeben" />
+                <TextDefinition Name="LogOffError" Comment="Benutzer konnte nicht abgemeldet werden" />
+                <TextDefinition Name="LogOnError" Comment="Benutzer konnte nicht angemeldet werden" />
+                <TextDefinition Name="ChooseUser" Comment="Bitte Benutzer angeben" />
+                <TextDefinition Name="LogOnOK" Comment="Benutzer erfolgreich angemeldet" />
+                <TextDefinition Name="LogOffOK" Comment="Benutzer erfolgreich abgemeldet" />
+                <TextDefinition Name="ChangePasswordOK" Comment="Ändern des Passwortes erfolgreich" />
+                <TextDefinition Name="EnterRightName" Comment="Bitte Rechtenamen angeben." />
+                <TextDefinition Name="NewPasswordsNotEqual" Comment="Fehlermeldung beim Ändern des Passwortes wenn das Passwort nicht mit der Wiederholung identisch ist" />
+                <TextDefinition Name="EnterNewPassword" Comment="Bitte neues Passwort angeben" />
+                <TextDefinition Name="capRemoveUser" Comment="Überschrift des Dialoges &quot;Benutzer entfernen&quot;" />
+              </TextGroup.Texts>
+            </TextGroup>
+            <TextGroup Name="Printing">
+              <TextGroup.TextGroups>
+                <TextGroup Name="Progress">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="Caption" />
+                    <TextDefinition Name="Ready" />
+                    <TextDefinition Name="PageNumber" />
+                    <TextDefinition Name="Loading" />
+                    <TextDefinition Name="Cancelling" />
+                    <TextDefinition Name="Printing" />
+                    <TextDefinition Name="PrintScreen" />
+                  </TextGroup.Texts>
+                </TextGroup>
+                <TextGroup Name="Settings">
+                  <TextGroup.Texts>
+                    <TextDefinition Name="Caption" />
+                    <TextDefinition Name="Printer" />
+                    <TextDefinition Name="Type" />
+                    <TextDefinition Name="Port" />
+                    <TextDefinition Name="Color" />
+                    <TextDefinition Name="PageSettings" />
+                    <TextDefinition Name="PaperSize" />
+                    <TextDefinition Name="Orientation" />
+                    <TextDefinition Name="Portrait" />
+                    <TextDefinition Name="Landscape" />
+                  </TextGroup.Texts>
+                </TextGroup>
+              </TextGroup.TextGroups>
+            </TextGroup>
+          </TextGroup.TextGroups>
+        </TextGroup>
+      </LanguageSystem.TextGroups>
+    </LanguageSystem>
+    <VariableSystem />
+  </ProjectFile.Systems>
+</ProjectFile>

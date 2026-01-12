@@ -1,0 +1,64 @@
+﻿<vw:View x:Class="HMI.FooterView"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:vw="http://inosoft.com/visiwin7"
+         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+         MinWidth="600"         
+         mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="{DynamicResource PrimaryBrush}">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+      
+        <vw:NavigationContainer x:Name="NavigationContainer" 
+                                Background="{DynamicResource PrimaryBrush}"
+                                MoreMenuStyle="{DynamicResource ShadowlessMenuButtonStyle}"
+                                ItemTemplate ="{StaticResource ShadowlessNavigationContainerItemTemplate}"
+                                HideRegions="True"
+                                Margin="30,0,0,0" 
+                                NavigationPanelDock="Bottom">
+
+            <vw:NavigationContainer.Items>
+
+                <vw:NavigationContainerItem LocalizableText="@Views.Footer.Home"
+                                            SymbolResourceKey="HomeButtonIcon"
+                                            InvertedSymbolResourceKey="InvertedHomeButtonIcon"
+                                            Width="106"
+                                            RegionName="MainRegion"
+                                            ViewName="MainView1" IsChecked="True" />
+
+                <vw:NavigationContainerItem LocalizableText="@Views.Footer.Machine"
+                                            SymbolResourceKey="MachineButtonIcon"
+                                            InvertedSymbolResourceKey="InvertedMachineButtonIcon"
+                                            Width="106"
+                                            RegionName="MainRegion"
+                                            ViewName="MainView2"/>
+
+            </vw:NavigationContainer.Items>
+
+        </vw:NavigationContainer>
+
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0,0,35,0">
+            <vw:Button Text="Exit"
+                       MinWidth="155"
+                       HorizontalAlignment="Right"
+                       Style="{DynamicResource ShadowlessRaisedLogInButton}"
+                       Symbol="{DynamicResource CloseIcon}" 
+                       LocalizableText="@Views.Footer.Exit">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <vw:ExitApplicationAction />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </vw:Button>
+
+        </StackPanel>
+      
+    </Grid>
+
+</vw:View>
