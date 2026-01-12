@@ -280,10 +280,6 @@ bld/
 [Bb]in/
 [Oo]bj/
 
-# NuGet Packages
-*.nupkg
-**/packages/*
-!**/packages/build/
 
 # Windows image file caches
 Thumbs.db
