@@ -2,7 +2,8 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
-
+*.vw7 diff=DiffDriver
+*.vw7 merge=MergeDriver
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
